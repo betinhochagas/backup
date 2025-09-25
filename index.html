@@ -11,7 +11,7 @@ INSTRUÇÕES PARA PERSONALIZAÇÃO:
    - Localize: line 8, 16, 21, schemas e outros locais
 
 2. WHATSAPP:
-   - Substitua "554733085697" pelo número correto (formato: 55DDNNNNNNNNN)
+   - Substitua "5547999817997" pelo número correto (formato: 55DDNNNNNNNNN)
    - Localize: formulário, links diretos e UTM tracking
 
 3. OPEN GRAPH IMAGES:
@@ -48,7 +48,7 @@ Desenvolvido seguindo requisitos de:
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://brsolucoes.inf.br/">
@@ -106,8 +106,14 @@ Desenvolvido seguindo requisitos de:
     <!-- Telegram específico -->
     <meta property="telegram:channel" content="@brsolucoes">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cpath d='M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z' fill='white'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cpath d='M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z' fill='white'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cpath d='M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z' fill='white'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cpath d='M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z' fill='white'/%3E%3C/svg%3E">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQiZSIFNvbHXDp8O1ZXMgZW0gVEkgLSBCYWNrdXAgQ29ycG9yYXRpdm8iLCJzaG9ydF9uYW1lIjoiQiZSIEJhY2t1cCIsImljb25zIjpbeyJzcmMiOiJkYXRhOmltYWdlL3N2Zyt4bWwsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDI0IDI0JyBmaWxsPSclMjMwNTk2NjknJTNFJTNDcGF0aCBkPSdNMTIgMUwzIDV2NmMwIDUuNTUgMy44NCAxMC43NCA5IDEyIDUuMTYtMS4yNiA5LTYuNDUgOS0xMlY1bC05LTR6Jy8lM0UlM0NwYXRoIGQ9J00xMCAxN2wtNC00IDEuNDEtMS40MUwxMCAxNC4xN2w2LjU5LTYuNTlMMTggOWwtOCA4eicgZmlsbD0nd2hpdGUnLyUzRSUzQy9zdmclM0UiLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XSwidGhlbWVfY29sb3IiOiIjMDU5NjY5IiwiYmFja2dyb3VuZF9jb2xvciI6IiNmOGZhZmMiLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSJ9">
+    <meta name="theme-color" content="#059669">
+    <meta name="msapplication-TileColor" content="#059669">
     
     <!-- Preload Hero Image for LCP -->
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1974&auto=format&fit=crop" fetchpriority="high">
@@ -157,9 +163,7 @@ Desenvolvido seguindo requisitos de:
         .nav-scrolled #nav-contact-btn:hover {
             background-color: #059669;
         }
-        .nav-scrolled #mobile-menu-button {
-            color: #1f2937; /* Ícone do menu mobile escuro */
-        }
+
 
         /* Parallax para mobile usando pseudo-elemento */
         @media (max-width: 767px) {
@@ -402,6 +406,38 @@ Desenvolvido seguindo requisitos de:
                 background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
             }
             
+            /* Otimizações para espaçamento no mobile */
+            #contactModal .space-y-6 > * + * {
+                margin-top: 1rem;
+            }
+            
+            /* Grid responsivo otimizado */
+            #contactModal .benefits-grid {
+                gap: 0.5rem;
+            }
+            
+            #contactModal .benefit-item {
+                font-size: 0.875rem;
+                line-height: 1.4;
+            }
+            
+            /* Formulário mais compacto */
+            #contactModal input, 
+            #contactModal select, 
+            #contactModal textarea {
+                padding: 0.75rem 1rem 0.75rem 3rem;
+            }
+            
+            /* Botões de radio e checkbox menores */
+            #contactModal .grid.grid-cols-2 {
+                gap: 0.5rem;
+            }
+            
+            #contactModal .grid.grid-cols-2 label {
+                padding: 0.75rem;
+                font-size: 0.875rem;
+            }
+            
             #contactModal .benefits-title {
                 font-size: 1rem;
                 margin-bottom: 0.75rem;
@@ -640,6 +676,87 @@ Desenvolvido seguindo requisitos de:
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Mobile Menu - Isolar completamente das classes da navbar */
+        #mobile-menu-overlay {
+            z-index: 9999 !important;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            backdrop-filter: none !important;
+        }
+        
+        #mobile-menu {
+            background-color: #ffffff !important;
+            opacity: 1 !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+        
+        #mobile-menu .bg-gray-50 {
+            background-color: #f9fafb !important;
+        }
+        
+        /* Garantir que o menu mobile não herde estilos da navbar */
+        .nav-scrolled #mobile-menu-overlay {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+        
+        .nav-scrolled #mobile-menu {
+            background-color: #ffffff !important;
+            opacity: 1 !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+
+        /* CSS do botão mobile */
+        #mobile-menu-button {
+            color: white !important;
+            z-index: 50;
+            position: relative;
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        /* Quando a navbar tem scroll, o botão fica escuro */
+        .nav-scrolled #mobile-menu-button {
+            color: #1f2937 !important;
+        }
+        
+        /* SVG do botão herda a cor */
+        #mobile-menu-button svg {
+            color: inherit !important;
+            stroke: currentColor !important;
+        }
+        
+        /* Garantir visibilidade em mobile */
+        @media (max-width: 768px) {
+            #mobile-menu-button {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            .nav-scrolled #mobile-menu-button {
+                color: #1f2937 !important;
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            .nav-scrolled #mobile-menu-button svg {
+                color: #1f2937 !important;
+                stroke: #1f2937 !important;
+            }
+        }
+
+        /* Bloquear scroll quando menu mobile está aberto */
+        body.menu-open {
+            overflow: hidden !important;
+            position: fixed !important;
+            width: 100% !important;
+        }
     </style>
 
     <!-- Schema.org - Service Markup -->
@@ -873,23 +990,47 @@ Desenvolvido seguindo requisitos de:
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Abrir menu de navegação">
+                    <button id="mobile-menu-button" class="focus:outline-none" aria-label="Abrir menu de navegação">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
                 </div>
             </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-blur-sm">
-                <a href="#beneficios" class="block py-3 px-6 text-white hover:bg-green-500">Benefícios</a>
-                <a href="#tecnico" class="block py-3 px-6 text-white hover:bg-green-500">Diferenciais</a>
-                <a href="#planos-sla" class="block py-3 px-6 text-white hover:bg-green-500">Planos</a>
-                <a href="#faq" class="block py-3 px-6 text-white hover:bg-green-500">FAQ</a>
-                <a href="#cta-final" class="block py-3 px-6 text-white hover:bg-green-500">Contato</a>
-            </div>
         </nav>
+
+    <!-- Mobile Menu Sidebar (Isolado da navbar) -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-[9999] hidden md:hidden">
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-80 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+            <!-- Header do Menu -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <img src="assets/img/logo.svg" alt="Logo" class="h-8 filter brightness-0">
+                <button id="mobile-menu-close" class="text-gray-500 hover:text-gray-700 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Menu Items -->
+            <nav class="flex-1 py-6">
+                <a href="#beneficios" class="block py-4 px-6 text-gray-700 hover:bg-green-50 hover:text-green-600 font-medium transition-colors">Benefícios</a>
+                <a href="#tecnico" class="block py-4 px-6 text-gray-700 hover:bg-green-50 hover:text-green-600 font-medium transition-colors">Diferenciais</a>
+                <a href="#planos-sla" class="block py-4 px-6 text-gray-700 hover:bg-green-50 hover:text-green-600 font-medium transition-colors">Planos</a>
+                <a href="#faq" class="block py-4 px-6 text-gray-700 hover:bg-green-50 hover:text-green-600 font-medium transition-colors">FAQ</a>
+                <a href="#cta-final" class="block py-4 px-6 text-gray-700 hover:bg-green-50 hover:text-green-600 font-medium transition-colors">Contato</a>
+            </nav>
+            
+            <!-- Rodapé do Menu -->
+            <div class="border-t border-gray-200 p-6 bg-gray-50">
+                <div class="text-center text-sm text-gray-600">
+                    <p class="font-semibold mb-2">Entre em contato</p>
+                    <p class="mb-1">📧 <span data-config="contato.email">contato@brsolucoes.inf.br</span></p>
+                    <p>📱 <span data-config="contato.telefone">(47) 3308-5697</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <div class="container mx-auto px-6 pt-32 pb-24 md:pt-48 md:pb-32 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight fade-in-section is-visible">
@@ -995,11 +1136,11 @@ Desenvolvido seguindo requisitos de:
         </section>
 
         <!-- Planos & SLA Section -->
-        <section id="planos-sla" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <section id="planos-sla" class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4 fade-in-section">Planos & SLA</h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in-section">Escolha o nível de proteção ideal para sua empresa. Todos com garantias contratuais de RTO/RPO.</p>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-800 mb-4 fade-in-section">Soluções Enterprise</h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto fade-in-section">Planos estruturados para atender às necessidades específicas do seu negócio. Garantias contratuais de RTO/RPO e suporte especializado.</p>
                 </div>
                 
                 <div class="max-w-7xl mx-auto">
@@ -1007,20 +1148,20 @@ Desenvolvido seguindo requisitos de:
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                         
                         <!-- Plano Essencial -->
-                        <div class="plano-card bg-white rounded-2xl shadow-lg border border-gray-200 p-8 relative fade-in-section">
+                        <div class="plano-card bg-white rounded-2xl shadow-lg border border-slate-200 p-8 relative fade-in-section hover:shadow-xl transition-shadow flex flex-col">
                             <div class="text-center mb-6">
-                                <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-xl mb-4 border border-slate-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-800 mb-2">ESSENCIAL</h3>
-                                <p class="text-gray-600 mb-4">Proteção básica para pequenas empresas</p>
-                                <div class="text-3xl font-bold text-blue-600 mb-1">R$ 890</div>
-                                <div class="text-sm text-gray-500">por mês*</div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">ESSENCIAL</h3>
+                                <p class="text-slate-600 mb-4">Solução fundamental para pequenas empresas</p>
+                                <div class="text-3xl font-bold text-slate-800 mb-1">R$ 890</div>
+                                <div class="text-sm text-slate-500">por mês + impostos</div>
                             </div>
                             
-                            <ul class="space-y-3 mb-8">
+                            <ul class="space-y-3 mb-8 flex-grow">
                                 <li class="flex items-center">
                                     <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -1059,34 +1200,34 @@ Desenvolvido seguindo requisitos de:
                                 </li>
                             </ul>
                             
-                            <button data-plan="essencial" class="saiba-mais-btn plano-button w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl">
-                                Saiba mais
+                            <button data-plan="essencial" class="saiba-mais-btn plano-button w-full bg-slate-800 hover:bg-slate-900 text-white font-semibold py-4 px-6 rounded-xl transition-colors mt-auto">
+                                Solicitar Proposta
                             </button>
                         </div>
 
                         <!-- Plano Business - DESTAQUE -->
-                        <div class="plano-card plano-card-business bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-2xl border-2 border-green-400 p-8 relative fade-in-section">
-                            <!-- Badge "Mais Popular" -->
+                        <div class="plano-card plano-card-business bg-gradient-to-br from-slate-50 to-white rounded-2xl shadow-2xl border-2 border-slate-300 p-8 relative fade-in-section hover:shadow-3xl transition-shadow flex flex-col">
+                            <!-- Badge "Recomendado" -->
                             <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                                <div class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
-                                    🔥 MAIS POPULAR
+                                <div class="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                                    ⭐ RECOMENDADO
                                 </div>
                             </div>
                             
                             <div class="text-center mb-6">
-                                <div class="inline-flex items-center justify-center w-16 h-16 bg-green-200 rounded-full mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-slate-200 rounded-xl mb-4 border border-slate-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-800 mb-2">BUSINESS</h3>
-                                <p class="text-gray-700 mb-4">Ideal para médias empresas</p>
-                                <div class="text-4xl font-bold text-green-600 mb-1">R$ 1.890</div>
-                                <div class="text-sm text-gray-600">por mês*</div>
-                                <div class="mt-2 text-xs text-green-700 font-semibold">✨ Melhor custo-benefício</div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">BUSINESS</h3>
+                                <p class="text-slate-600 mb-4">Solução completa para médias empresas</p>
+                                <div class="text-4xl font-bold text-slate-800 mb-1">R$ 1.890</div>
+                                <div class="text-sm text-slate-500">por mês + impostos</div>
+                                <div class="mt-2 text-xs text-slate-700 font-semibold">✨ Excelente custo-benefício</div>
                             </div>
                             
-                            <ul class="space-y-3 mb-8">
+                            <ul class="space-y-3 mb-8 flex-grow">
                                 <li class="flex items-center">
                                     <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -1125,66 +1266,69 @@ Desenvolvido seguindo requisitos de:
                                 </li>
                             </ul>
                             
-                            <button data-plan="business" class="saiba-mais-btn plano-button w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg">
-                                Saiba mais
+                            <button data-plan="business" class="saiba-mais-btn plano-button w-full bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-900 hover:to-black text-white font-bold py-4 px-6 rounded-xl shadow-lg transition-all mt-auto">
+                                Solicitar Proposta
                             </button>
                         </div>
 
                         <!-- Plano Enterprise -->
-                        <div class="plano-card bg-white rounded-2xl shadow-lg border border-gray-200 p-8 relative fade-in-section">
+                        <div class="plano-card bg-gradient-to-br from-slate-50 to-gray-100 rounded-2xl shadow-lg border border-slate-200 p-8 relative fade-in-section flex flex-col">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-slate-600 text-white text-xs font-semibold px-3 py-1 rounded-full">CORPORATIVO</span>
+                            </div>
                             <div class="text-center mb-6">
-                                <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-full mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-800 mb-2">ENTERPRISE</h3>
-                                <p class="text-gray-600 mb-4">Máxima proteção para grandes empresas</p>
-                                <div class="text-3xl font-bold text-purple-600 mb-1">R$ 3.490</div>
-                                <div class="text-sm text-gray-500">por mês*</div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">ENTERPRISE</h3>
+                                <p class="text-slate-600 mb-4">Solução completa para grandes corporações</p>
+                                <div class="text-3xl font-bold text-slate-700 mb-1">R$ 3.490</div>
+                                <div class="text-sm text-slate-500">por mês*</div>
                             </div>
                             
-                            <ul class="space-y-3 mb-8">
+                            <ul class="space-y-3 mb-8 flex-grow">
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-5 h-5 text-slate-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-700">RPO: 15 minutos</span>
+                                    <span class="text-slate-700">RPO: 15 minutos</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-5 h-5 text-slate-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-700">RTO: < 15 min</span>
+                                    <span class="text-slate-700">RTO: < 15 min</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-5 h-5 text-slate-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-700">Retenção: 7 anos</span>
+                                    <span class="text-slate-700">Retenção: 7 anos</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-5 h-5 text-slate-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-700">✓ Backup Imutável</span>
+                                    <span class="text-slate-700">✓ Backup Imutável</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-5 h-5 text-slate-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-700">Monitoramento 24/7 N3</span>
+                                    <span class="text-slate-700">Monitoramento 24/7 N3</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-5 h-5 text-slate-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-700">SLA 99,99%</span>
+                                    <span class="text-slate-700">SLA 99,99%</span>
                                 </li>
                             </ul>
                             
-                            <button data-plan="enterprise" class="saiba-mais-btn plano-button w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl">
-                                Saiba mais
+                            <button data-plan="enterprise" class="saiba-mais-btn plano-button w-full bg-slate-800 hover:bg-slate-900 text-white font-semibold py-4 px-6 rounded-xl transition-colors mt-auto">
+                                Solicitar Proposta
                             </button>
                         </div>
                     </div>
@@ -1246,13 +1390,13 @@ Desenvolvido seguindo requisitos de:
                     
                     <!-- CTA Final -->
                     <div class="text-center fade-in-section">
-                        <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 text-white">
-                            <h3 class="text-2xl md:text-3xl font-bold mb-4">Não sabe qual plano escolher?</h3>
-                            <p class="text-lg mb-6 opacity-90">Receba uma análise técnica gratuita e descubra o plano ideal para sua empresa</p>
-                            <button id="planosCtaBtn" class="plano-button bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-10 rounded-xl text-lg shadow-lg">
-                                🎯 Receber Análise Gratuita
+                        <div class="bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl p-8 text-white shadow-xl border border-slate-600">
+                            <h3 class="text-2xl md:text-3xl font-bold mb-4">Precisa de uma solução personalizada?</h3>
+                            <p class="text-lg mb-6 opacity-90">Receba uma consultoria técnica gratuita e descubra a solução ideal para sua empresa</p>
+                            <button id="planosCtaBtn" class="plano-button bg-white text-slate-700 hover:bg-gray-100 font-bold py-4 px-10 rounded-xl text-lg shadow-lg transition-colors">
+                                📋 Solicitar Consultoria Gratuita
                             </button>
-                            <p class="text-sm mt-4 opacity-75">* Valores a partir de. Consulte condições especiais para volumes maiores.</p>
+                            <p class="text-sm mt-4 opacity-75">* Valores a partir de. Consulte condições especiais para volumes corporativos.</p>
                         </div>
                     </div>
                 </div>
@@ -1532,22 +1676,22 @@ Desenvolvido seguindo requisitos de:
     <!-- Modais dos Planos -->
     <!-- Modal Plano Essencial -->
     <div id="planModal-essencial" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-essencial">
-        <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
+        <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
             <!-- Header -->
-            <div class="relative bg-gradient-to-r from-blue-600 to-blue-700 rounded-t-2xl px-8 py-6 text-white">
+            <div class="relative bg-gradient-to-r from-slate-700 to-slate-800 rounded-t-2xl px-8 py-6 text-white">
                 <button class="close-plan-modal absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 
                 <div class="flex items-center space-x-4">
-                    <div class="p-3 bg-blue-100 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="p-3 bg-slate-100 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
                     <div>
-                        <h2 id="modal-title-essencial" class="text-3xl font-bold">Plano Essencial</h2>
-                        <p class="text-blue-100 mt-1">Proteção básica para pequenas empresas</p>
+                        <h2 id="modal-title-essencial" class="text-3xl font-bold">Solução Essencial</h2>
+                        <p class="text-slate-200 mt-1">Proteção básica para pequenas empresas</p>
                     </div>
                 </div>
             </div>
@@ -1555,36 +1699,36 @@ Desenvolvido seguindo requisitos de:
             <!-- Content -->
             <div class="px-8 py-6">
                 <!-- Preço -->
-                <div class="text-center mb-6 p-6 bg-blue-50 rounded-xl border border-blue-200">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">R$ 890</div>
-                    <div class="text-gray-600">por mês*</div>
-                    <div class="text-sm text-gray-500 mt-2">*A partir de 500GB de dados</div>
+                <div class="text-center mb-6 p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <div class="text-4xl font-bold text-slate-700 mb-2">R$ 890</div>
+                    <div class="text-slate-600">por mês*</div>
+                    <div class="text-sm text-slate-500 mt-2">*A partir de 500GB de dados</div>
                 </div>
 
                 <!-- Características Principais -->
                 <div class="mb-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         Principais Características
                     </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="flex items-center space-x-3">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            <span class="text-gray-700">RPO: 24 horas</span>
+                            <span class="w-2 h-2 bg-slate-500 rounded-full"></span>
+                            <span class="text-slate-700">RPO: 24 horas</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            <span class="text-gray-700">RTO: 4 horas</span>
+                            <span class="w-2 h-2 bg-slate-500 rounded-full"></span>
+                            <span class="text-slate-700">RTO: 4 horas</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            <span class="text-gray-700">Retenção: 30 dias</span>
+                            <span class="w-2 h-2 bg-slate-500 rounded-full"></span>
+                            <span class="text-slate-700">Retenção: 30 dias</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            <span class="text-gray-700">SLA: 99,5%</span>
+                            <span class="w-2 h-2 bg-slate-500 rounded-full"></span>
+                            <span class="text-slate-700">SLA: 99,5%</span>
                         </div>
                     </div>
                 </div>
@@ -1599,48 +1743,48 @@ Desenvolvido seguindo requisitos de:
                     </h3>
                     <div class="space-y-3">
                         <div class="flex items-start space-x-3">
-                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-slate-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                             <div>
-                                <div class="font-semibold text-gray-800">Backup automatizado diário</div>
-                                <div class="text-sm text-gray-600">Backups executados automaticamente todos os dias</div>
+                                <div class="font-semibold text-slate-800">Backup automatizado diário</div>
+                                <div class="text-sm text-slate-600">Backups executados automaticamente todos os dias</div>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-slate-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                             <div>
-                                <div class="font-semibold text-gray-800">Monitoramento em horário comercial</div>
-                                <div class="text-sm text-gray-600">Acompanhamento de segunda a sexta, das 8h às 18h</div>
+                                <div class="font-semibold text-slate-800">Monitoramento em horário comercial</div>
+                                <div class="text-sm text-slate-600">Acompanhamento de segunda a sexta, das 8h às 18h</div>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-slate-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                             <div>
-                                <div class="font-semibold text-gray-800">Criptografia AES-256</div>
-                                <div class="text-sm text-gray-600">Proteção militar para seus dados</div>
+                                <div class="font-semibold text-slate-800">Criptografia AES-256</div>
+                                <div class="text-sm text-slate-600">Proteção militar para seus dados</div>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-slate-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                             <div>
-                                <div class="font-semibold text-gray-800">Relatórios mensais</div>
-                                <div class="text-sm text-gray-600">Status detalhado dos seus backups</div>
+                                <div class="font-semibold text-slate-800">Relatórios mensais</div>
+                                <div class="text-sm text-slate-600">Status detalhado dos seus backups</div>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-slate-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                             <div>
-                                <div class="font-semibold text-gray-800">Suporte técnico</div>
-                                <div class="text-sm text-gray-600">Atendimento especializado quando precisar</div>
+                                <div class="font-semibold text-slate-800">Suporte técnico</div>
+                                <div class="text-sm text-slate-600">Atendimento especializado quando precisar</div>
                             </div>
                         </div>
                     </div>
@@ -1678,8 +1822,8 @@ Desenvolvido seguindo requisitos de:
 
                 <!-- CTA -->
                 <div class="text-center pt-4">
-                    <button class="plan-modal-cta w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4">
-                        Solicitar Orçamento do Plano Essencial
+                    <button class="plan-modal-cta w-full bg-slate-700 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4">
+                        Solicitar Orçamento da Solução Essencial
                     </button>
                     <p class="text-sm text-gray-500">Resposta em até 2 horas úteis</p>
                 </div>
@@ -1689,29 +1833,22 @@ Desenvolvido seguindo requisitos de:
 
     <!-- Modal Plano Business -->
     <div id="planModal-business" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-business">
-        <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
+        <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
             <!-- Header -->
-            <div class="relative bg-gradient-to-r from-green-600 to-green-700 rounded-t-2xl px-8 py-6 text-white">
+            <div class="relative bg-gradient-to-r from-slate-700 to-slate-800 rounded-t-2xl px-8 py-6 text-white">
                 <button class="close-plan-modal absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 
-                <!-- Badge Mais Popular -->
-                <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
-                        🔥 MAIS POPULAR
-                    </div>
-                </div>
-                
-                <div class="flex items-center space-x-4 mt-4">
-                    <div class="p-3 bg-green-100 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-slate-100 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
                     <div>
-                        <h2 id="modal-title-business" class="text-3xl font-bold">Plano Business</h2>
-                        <p class="text-green-100 mt-1">Ideal para médias empresas</p>
+                        <h2 id="modal-title-business" class="text-3xl font-bold">Solução Business</h2>
+                        <p class="text-slate-200 mt-1">Ideal para médias empresas</p>
                     </div>
                 </div>
             </div>
@@ -1719,11 +1856,11 @@ Desenvolvido seguindo requisitos de:
             <!-- Content -->
             <div class="px-8 py-6">
                 <!-- Preço -->
-                <div class="text-center mb-6 p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
-                    <div class="text-4xl font-bold text-green-600 mb-2">R$ 1.890</div>
-                    <div class="text-gray-600">por mês*</div>
-                    <div class="text-sm text-gray-500 mt-2">*A partir de 1TB de dados</div>
-                    <div class="text-sm text-green-700 font-semibold mt-1">✨ Melhor custo-benefício</div>
+                <div class="text-center mb-6 p-6 bg-gradient-to-br from-slate-50 to-gray-50 rounded-xl border border-slate-200">
+                    <div class="text-4xl font-bold text-slate-700 mb-2">R$ 1.890</div>
+                    <div class="text-slate-600">por mês*</div>
+                    <div class="text-sm text-slate-500 mt-2">*A partir de 1TB de dados</div>
+                    <div class="text-sm text-slate-700 font-semibold mt-1">✨ Melhor custo-benefício</div>
                 </div>
 
                 <!-- Características Principais -->
@@ -1846,8 +1983,8 @@ Desenvolvido seguindo requisitos de:
 
                 <!-- CTA -->
                 <div class="text-center pt-4">
-                    <button class="plan-modal-cta w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4 shadow-lg">
-                        Solicitar Orçamento do Plano Business
+                    <button class="plan-modal-cta w-full bg-slate-700 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4 shadow-lg">
+                        Solicitar Orçamento da Solução Business
                     </button>
                     <p class="text-sm text-gray-500">Resposta em até 2 horas úteis • Mais escolhido pelas empresas</p>
                 </div>
@@ -1857,22 +1994,22 @@ Desenvolvido seguindo requisitos de:
 
     <!-- Modal Plano Enterprise -->
     <div id="planModal-enterprise" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-enterprise">
-        <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
+        <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
             <!-- Header -->
-            <div class="relative bg-gradient-to-r from-purple-600 to-purple-700 rounded-t-2xl px-8 py-6 text-white">
+            <div class="relative bg-gradient-to-r from-slate-700 to-slate-800 rounded-t-2xl px-8 py-6 text-white">
                 <button class="close-plan-modal absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 
                 <div class="flex items-center space-x-4">
-                    <div class="p-3 bg-purple-100 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="p-3 bg-slate-100 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                     </div>
                     <div>
-                        <h2 id="modal-title-enterprise" class="text-3xl font-bold">Plano Enterprise</h2>
-                        <p class="text-purple-100 mt-1">Máxima proteção para grandes empresas</p>
+                        <h2 id="modal-title-enterprise" class="text-3xl font-bold">Solução Enterprise</h2>
+                        <p class="text-slate-200 mt-1">Solução completa para grandes corporações</p>
                     </div>
                 </div>
             </div>
@@ -1880,17 +2017,17 @@ Desenvolvido seguindo requisitos de:
             <!-- Content -->
             <div class="px-8 py-6">
                 <!-- Preço -->
-                <div class="text-center mb-6 p-6 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-200">
-                    <div class="text-4xl font-bold text-purple-600 mb-2">R$ 3.490</div>
-                    <div class="text-gray-600">por mês*</div>
-                    <div class="text-sm text-gray-500 mt-2">*A partir de 5TB de dados</div>
-                    <div class="text-sm text-purple-700 font-semibold mt-1">🚀 Máxima Performance</div>
+                <div class="text-center mb-6 p-6 bg-gradient-to-br from-slate-50 to-gray-50 rounded-xl border border-slate-200">
+                    <div class="text-4xl font-bold text-slate-700 mb-2">R$ 3.490</div>
+                    <div class="text-slate-600">por mês*</div>
+                    <div class="text-sm text-slate-500 mt-2">*A partir de 5TB de dados</div>
+                    <div class="text-sm text-slate-700 font-semibold mt-1">🏢 Solução Corporativa</div>
                 </div>
 
                 <!-- Características Principais -->
                 <div class="mb-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         Principais Características
@@ -2011,8 +2148,8 @@ Desenvolvido seguindo requisitos de:
 
                 <!-- CTA -->
                 <div class="text-center pt-4">
-                    <button class="plan-modal-cta w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4 shadow-lg">
-                        Solicitar Orçamento do Plano Enterprise
+                    <button class="plan-modal-cta w-full bg-slate-700 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4 shadow-lg">
+                        Solicitar Orçamento da Solução Enterprise
                     </button>
                     <p class="text-sm text-gray-500">Resposta em até 2 horas úteis • Solução para grandes empresas</p>
                 </div>
@@ -2023,53 +2160,53 @@ Desenvolvido seguindo requisitos de:
     <!-- Modal de Contato Corporativo -->
     <div id="contactModal" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <!-- Modal Container with Enhanced Design -->
-        <div class="bg-gradient-to-br from-white to-gray-50 text-gray-800 rounded-2xl shadow-2xl border border-gray-200 w-full max-w-xl mx-4 my-8 relative transform transition-all duration-300 scale-95 opacity-0 modal-content">
-            <!-- Header Section -->
-            <div class="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 rounded-t-2xl px-8 py-6 text-white modal-header">
+        <div class="bg-gradient-to-br from-white to-gray-50 text-gray-800 rounded-2xl shadow-2xl border border-gray-200 w-full max-w-xl mx-4 my-8 relative transform transition-all duration-300 scale-95 opacity-0 modal-content flex flex-col max-h-[90vh]">
+            <!-- Header Section - Fixed -->
+            <div class="relative bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-t-2xl px-8 py-6 text-white modal-header flex-shrink-0 sticky top-0 z-10">
                 <button id="closeModalBtn" class="absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 
                 <div class="flex items-center space-x-4">
-                    <div class="p-3 rounded-xl">
-                        <img src="assets/img/logo.svg" alt="Logo B&R Soluções em TI" class="h-8 w-auto mobile-logo" width="32" height="32" loading="lazy" decoding="async">
+                    <div class="flex-shrink-0">
+                        <img src="assets/img/logo.svg" data-config="branding.logo" alt="Logo da Empresa" class="h-12 w-auto mobile-logo" width="48" height="48" loading="lazy" decoding="async" style="filter: brightness(0) invert(1);">
                     </div>
                     <div>
-                        <h2 id="modal-title" class="text-2xl font-bold mobile-title">Auditoria Gratuita de Backup</h2>
-                        <p class="text-blue-100 mt-1 mobile-subtitle">Análise técnica completa da sua infraestrutura</p>
+                        <h2 id="modal-title" class="text-2xl font-bold mobile-title text-white">Diagnóstico Gratuito de Backup Corporativo</h2>
+                        <p class="text-blue-100 mt-1 mobile-subtitle">Análise completa da proteção dos seus dados</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Content Section -->
-            <div class="px-8 py-6 modal-body">
+            <!-- Content Section - Scrollable -->
+            <div class="px-8 py-6 modal-body flex-1 overflow-y-auto">
                 <!-- Benefits Section -->
                 <div class="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-100 benefits-mobile">
                     <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center benefits-title">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                         </svg>
-                        O que você receberá:
+                        O que você receberá GRÁTIS:
                     </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700 benefits-grid">
                         <div class="flex items-center benefit-item">
                             <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
-                            Análise de vulnerabilidades
+                            Análise da proteção atual
                         </div>
                         <div class="flex items-center benefit-item">
                             <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
-                            Relatório de backup atual
+                            Relatório de vulnerabilidades
                         </div>
                         <div class="flex items-center benefit-item">
                             <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
-                            Recomendações técnicas
+                            Proposta de backup personalizada
                         </div>
                         <div class="flex items-center benefit-item">
                             <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
-                            Orçamento personalizado
+                            Plano de implementação sem riscos
                         </div>
                     </div>
-                </div></div>
+                </div>
                 <!-- Formulário Corporativo -->
                 <form id="contactForm" class="space-y-6">
                     <!-- Nome e Cargo -->
@@ -2079,7 +2216,7 @@ Desenvolvido seguindo requisitos de:
                                 Nome Completo *
                                 <span class="text-red-500 ml-1">•</span>
                             </label>
-                            <div class="relative">
+                            <div class="relative form-field-focus">
                                 <input type="text" id="name" name="name" 
                                        class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
                                        placeholder="João Silva" 
@@ -2124,7 +2261,7 @@ Desenvolvido seguindo requisitos de:
                                 Empresa *
                                 <span class="text-red-500 ml-1">•</span>
                             </label>
-                            <div class="relative">
+                            <div class="relative form-field-focus">
                                 <input type="text" id="company" name="company" 
                                        class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
                                        placeholder="Nome da sua empresa" 
@@ -2140,7 +2277,7 @@ Desenvolvido seguindo requisitos de:
                             <label for="cnpj" class="block text-sm font-semibold text-gray-700 mb-2">
                                 CNPJ (Opcional)
                             </label>
-                            <div class="relative">
+                            <div class="relative form-field-focus">
                                 <input type="text" id="cnpj" name="cnpj" 
                                        class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
                                        placeholder="00.000.000/0001-00"
@@ -2160,7 +2297,7 @@ Desenvolvido seguindo requisitos de:
                                 E-mail Corporativo *
                                 <span class="text-red-500 ml-1">•</span>
                             </label>
-                            <div class="relative">
+                            <div class="relative form-field-focus">
                                 <input type="email" id="email" name="email" 
                                        class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
                                        placeholder="joao@suaempresa.com.br" 
@@ -2177,10 +2314,10 @@ Desenvolvido seguindo requisitos de:
                                 Telefone/WhatsApp *
                                 <span class="text-red-500 ml-1">•</span>
                             </label>
-                            <div class="relative">
+                            <div class="relative form-field-focus">
                                 <input type="tel" id="phone" name="phone" 
                                        class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
-                                       placeholder="(47) 99999-9999" 
+                                       placeholder="(47) 3308-5697" 
                                        required aria-describedby="phone-error">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -2190,71 +2327,72 @@ Desenvolvido seguindo requisitos de:
                         </div>
                     </div>
 
-                    <!-- Tamanho da Empresa -->
+                    <!-- Volume de dados -->
                     <div>
-                        <label for="company-size" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Porte da Empresa
+                        <label for="data-volume" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Qual o volume aproximado de dados para backup?
                         </label>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
                             <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="radio" name="company-size" value="1-10" class="text-blue-600 focus:ring-blue-500">
-                                <span class="text-sm text-gray-700">1-10</span>
+                                <input type="radio" name="data-volume" value="< 500GB" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">< 500GB</span>
                             </label>
                             <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="radio" name="company-size" value="11-50" class="text-blue-600 focus:ring-blue-500">
-                                <span class="text-sm text-gray-700">11-50</span>
+                                <input type="radio" name="data-volume" value="500GB-2TB" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">500GB-2TB</span>
                             </label>
                             <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="radio" name="company-size" value="51-200" class="text-blue-600 focus:ring-blue-500">
-                                <span class="text-sm text-gray-700">51-200</span>
+                                <input type="radio" name="data-volume" value="2-10TB" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">2-10TB</span>
                             </label>
                             <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="radio" name="company-size" value="200+" class="text-blue-600 focus:ring-blue-500">
-                                <span class="text-sm text-gray-700">200+</span>
+                                <input type="radio" name="data-volume" value="10TB+" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">10TB+</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- Serviços de Interesse -->
+                    <!-- Principais necessidades -->
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-3">
-                            Serviços de Interesse (Opcional)
+                            Principais necessidades de backup (Opcional)
                         </label>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="checkbox" name="services[]" value="backup-servidores" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <input type="checkbox" name="services[]" value="backup-automatizado" class="text-blue-600 focus:ring-blue-500 rounded">
                                 <div class="flex items-center space-x-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                                     </svg>
-                                    <span class="text-sm text-gray-700">Backup de Servidores</span>
+                                    <span class="text-sm text-gray-700">Backup Automatizado</span>
                                 </div>
                             </label>
                             <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="checkbox" name="services[]" value="backup-sistema" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <input type="checkbox" name="services[]" value="protecao-ransomware" class="text-blue-600 focus:ring-blue-500 rounded">
                                 <div class="flex items-center space-x-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                                     </svg>
-                                    <span class="text-sm text-gray-700">Backup de Sistema</span>
+                                    <span class="text-sm text-gray-700">Proteção Anti-Ransomware</span>
                                 </div>
                             </label>
                             <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="checkbox" name="services[]" value="backup-vm" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <input type="checkbox" name="services[]" value="monitoramento-24h" class="text-blue-600 focus:ring-blue-500 rounded">
                                 <div class="flex items-center space-x-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                                     </svg>
-                                    <span class="text-sm text-gray-700">Backup de VM</span>
+                                    <span class="text-sm text-gray-700">Monitoramento 24/7</span>
                                 </div>
                             </label>
                             <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
-                                <input type="checkbox" name="services[]" value="backup-geral" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <input type="checkbox" name="services[]" value="rto-garantido" class="text-blue-600 focus:ring-blue-500 rounded">
                                 <div class="flex items-center space-x-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
-                                    <span class="text-sm text-gray-700">Backup Geral</span>
+                                    <span class="text-sm text-gray-700">RTO Garantido < 15min</span>
                                 </div>
                             </label>
                         </div>
@@ -2263,12 +2401,12 @@ Desenvolvido seguindo requisitos de:
                     <!-- Mensagem -->
                     <div>
                         <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Descreva sua necessidade (Opcional)
+                            Descreva sua situação atual de backup (Opcional)
                         </label>
                         <div class="relative">
                             <textarea id="message" name="message" rows="4" 
                                       class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 resize-none" 
-                                      placeholder="Conte-nos mais sobre sua infraestrutura atual, problemas enfrentados ou objetivos específicos..."></textarea>
+                                      placeholder="Ex: Temos backup manual diário, mas já perdemos dados por falhas. Queremos automatizar e ter garantia de recuperação rápida..."></textarea>
                         </div>
                     </div>
 
@@ -2289,18 +2427,18 @@ Desenvolvido seguindo requisitos de:
                     <!-- Botão de Envio -->
                     <div class="pt-4">
                         <button type="submit" 
-                                class="w-full bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-300 flex items-center justify-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                class="w-full bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.01] hover:shadow-md focus:outline-none focus:ring-3 focus:ring-green-300 flex items-center justify-center space-x-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
-                            <span>Solicitar Diagnóstico via WhatsApp</span>
+                            <span>Solicitar Diagnóstico de Backup via WhatsApp</span>
                         </button>
                         
                         <div class="flex items-center justify-center mt-4 space-x-2 text-sm text-gray-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <span>Resposta em até 2 horas úteis • 100% gratuito</span>
+                            <span>Resposta em até 15 minutos • Diagnóstico 100% gratuito</span>
                         </div>
                     </div>
                 </form>
@@ -2321,21 +2459,60 @@ Desenvolvido seguindo requisitos de:
             }
         });
 
-        // --- Mobile Menu Toggle ---
+        // --- Mobile Menu Sidebar Toggle ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
         const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        
+        if (mobileMenuButton && mobileMenuOverlay && mobileMenu) {
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+            // Função para abrir o menu
+            function openMobileMenu() {
+                mobileMenuOverlay.classList.remove('hidden');
+                document.body.classList.add('menu-open');
+                setTimeout(() => {
+                    mobileMenu.classList.remove('-translate-x-full');
+                }, 10);
+            }
 
-        // --- Close Mobile Menu on Link Click ---
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+            // Função para fechar o menu
+            function closeMobileMenu() {
+                mobileMenu.classList.add('-translate-x-full');
+                document.body.classList.remove('menu-open');
+                setTimeout(() => {
+                    mobileMenuOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            // Abrir menu ao clicar no botão hamburger
+            mobileMenuButton.addEventListener('click', openMobileMenu);
+
+            // Fechar menu ao clicar no X
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', closeMobileMenu);
+            }
+
+            // Fechar menu ao clicar no overlay (fora do menu)
+            mobileMenuOverlay.addEventListener('click', (e) => {
+                if (e.target === mobileMenuOverlay) {
+                    closeMobileMenu();
+                }
             });
-        });
+
+            // Fechar menu ao clicar nos links
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Fechar menu com ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !mobileMenuOverlay.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            });
+        }
 
         // --- Ano Atual no Footer ---
         document.getElementById('currentYear').textContent = new Date().getFullYear();
@@ -2678,39 +2855,39 @@ Desenvolvido seguindo requisitos de:
             const cnpj = document.getElementById('cnpj').value.trim();
             const email = document.getElementById('email').value.trim();
             const phone = document.getElementById('phone').value.trim();
-            const companySize = document.querySelector('input[name="company-size"]:checked')?.value || '';
+            const dataVolume = document.querySelector('input[name="data-volume"]:checked')?.value || '';
             const services = Array.from(document.querySelectorAll('input[name="services[]"]:checked')).map(cb => cb.value);
             const message = document.getElementById('message').value.trim();
             
             // Montar mensagem para WhatsApp
-            let text = `🔐 *Diagnóstico de Backup Corporativo* 🔐\n\n`;
+            let text = `�️ *Diagnóstico Gratuito de Backup Corporativo* �️\n\n`;
             text += `👤 *Nome:* ${name}\n`;
             text += `🏢 *Empresa:* ${company}\n`;
             if (position) text += `💼 *Cargo:* ${position}\n`;
             if (cnpj) text += `📄 *CNPJ:* ${cnpj}\n`;
-            text += `📧 *E-mail:* ${email}\n`;
+            text += `📧 *E-mail Corporativo:* ${email}\n`;
             text += `📱 *Telefone:* ${phone}\n`;
-            if (companySize) text += `👥 *Porte da Empresa:* ${companySize} funcionários\n`;
+            if (dataVolume) text += `� *Volume de dados:* ${dataVolume}\n`;
             
             if (services.length > 0) {
-                text += `🎯 *Serviços de Interesse:*\n`;
+                text += `🎯 *Necessidades de Backup:*\n`;
                 services.forEach(service => {
                     const serviceNames = {
-                        'backup-servidores': '• Backup de Servidores',
-                        'backup-sistema': '• Backup de Sistema',
-                        'backup-vm': '• Backup de VM',
-                        'backup-geral': '• Backup Geral'
+                        'backup-automatizado': '• Backup Automatizado',
+                        'protecao-ransomware': '• Proteção Anti-Ransomware',
+                        'monitoramento-24h': '• Monitoramento 24/7',
+                        'rto-garantido': '• RTO Garantido < 15min'
                     };
                     text += `${serviceNames[service] || '• ' + service}\n`;
                 });
             }
             
             if (message) {
-                text += `💬 *Mensagem:* ${message}\n`;
+                text += `💬 *Situação Atual do Backup:* ${message}\n`;
             }
             
-            text += `\n✅ *Solicito o diagnóstico técnico gratuito para minha empresa.*`;
-            text += `\n\n_Mensagem enviada através do site brsolucoes.inf.br_`;
+            text += `\n✅ *Solicito o diagnóstico gratuito de backup corporativo.*`;
+            text += `\n\n_Mensagem enviada através da página de Backup Corporativo_`;
             
             const encodedText = encodeURIComponent(text);
             const whatsappUrl = `https://wa.me/554733085697?text=${encodedText}&utm_source=landing&utm_medium=whatsapp&utm_campaign=backup-corporativo`;
@@ -2721,7 +2898,7 @@ Desenvolvido seguindo requisitos de:
                     'event_category': 'Lead Generation',
                     'event_label': 'WhatsApp Form Submitted Corporate',
                     'value': 1,
-                    'company_size': companySize,
+                    'data_volume': dataVolume,
                     'services_count': services.length
                 });
             }
