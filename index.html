@@ -1,0 +1,2979 @@
+<!DOCTYPE html>
+<!-- 
+LANDING PAGE: BACKUP CORPORATIVO - B&R SOLUÇÕES EM TI
+=======================================================
+
+INSTRUÇÕES PARA PERSONALIZAÇÃO:
+-------------------------------
+
+1. DOMÍNIO CANÔNICO:
+   - Altere todas as ocorrências de "https://brsolucoes.inf.br/" para seu domínio real
+   - Localize: line 8, 16, 21, schemas e outros locais
+
+2. WHATSAPP:
+   - Substitua "5547999817997" pelo número correto (formato: 55DDNNNNNNNNN)
+   - Localize: formulário, links diretos e UTM tracking
+
+3. OPEN GRAPH IMAGES:
+   - Substitua "og-backup-corporativo-1200x630.jpg" por suas imagens reais
+   - Tamanho recomendado: 1200x630px
+   - Localize: line 19 e 26
+
+4. GOOGLE ANALYTICS / META PIXEL:
+   - Substitua "G-XXXXXXXXXX" pelo seu ID do Google Analytics
+   - Substitua "XXXXXXXXXXXXXXX" pelo seu ID do Meta Pixel
+   - Localize: scripts no head da página
+
+5. LOGOS E IMAGENS:
+   - Substitua as imagens na pasta assets/img/
+   - Certifique-se de que os caminhos estão corretos
+   - Otimize as imagens para web (WebP recomendado)
+
+PARA PRODUÇÃO:
+--------------
+- Substitua o CDN do Tailwind por versão buildada e minificada
+- Otimize todas as imagens 
+- Configure SSL e HTTP/2
+- Teste velocidade no PageSpeed Insights
+- Valide estrutura de dados no Google Search Console
+
+Desenvolvido seguindo requisitos de:
+✓ SEO Técnico completo
+✓ Acessibilidade WCAG AA
+✓ Performance (Core Web Vitals)
+✓ Tracking GA4/Meta
+✓ Compliance LGPD
+✓ Schema.org estruturado
+-->
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://brsolucoes.inf.br/">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index,follow">
+    
+    <!-- SEO Meta Tags -->
+    <title>Backup Corporativo com RTO em 15min | B&R Soluções em TI Blumenau-SC</title>
+    <meta name="description" content="Backup corporativo com RTO garantido em contrato - restaure em até 15min. Arquitetura 3-2-1-1-0, monitoramento 24/7 N3, AES-256, LGPD compliance. Blumenau-SC.">
+    <meta name="author" content="B&R Soluções em TI">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="B&R Soluções em TI">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://brsolucoes.inf.br/">
+    <meta property="og:title" content="🛡️ Backup Corporativo com RTO em 15min - B&R Soluções em TI">
+    <meta property="og:description" content="✅ Backup corporativo com RTO garantido em contrato - restaure em até 15min
+🔐 Arquitetura 3-2-1-1-0 com monitoramento 24/7 N3
+⚡ Criptografia AES-256 + LGPD compliance
+📍 Blumenau-SC | Resposta em 15min">
+    
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="https://brsolucoes.inf.br/assets/img/logo.svg">
+    <meta property="og:image:alt" content="B&R Soluções em TI - Backup Corporativo Profissional">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="752">
+    <meta property="og:image:height" content="291">
+    
+    <!-- Informações adicionais para redes sociais -->
+    <meta property="og:updated_time" content="2025-09-25T00:00:00+00:00">
+    <meta property="article:author" content="B&R Soluções em TI">
+    <meta property="article:publisher" content="https://brsolucoes.inf.br/">
+    
+    <!-- WhatsApp específico -->
+    <meta property="og:image:secure_url" content="https://brsolucoes.inf.br/assets/img/logo.svg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@brsolucoes">
+    <meta name="twitter:creator" content="@brsolucoes">
+    <meta name="twitter:url" content="https://brsolucoes.inf.br/">
+    <meta name="twitter:title" content="🛡️ Backup Corporativo com RTO em 15min - B&R Soluções em TI">
+    <meta name="twitter:description" content="✅ Backup corporativo com RTO garantido em contrato - restaure em até 15min. 🔐 Arquitetura 3-2-1-1-0 com monitoramento 24/7 N3. ⚡ Criptografia AES-256 + LGPD compliance.">
+    <meta name="twitter:image" content="https://brsolucoes.inf.br/assets/img/logo.svg">
+    <meta name="twitter:image:alt" content="B&R Soluções em TI - Backup Corporativo Profissional">
+    
+    <!-- LinkedIn específico -->
+    <meta property="og:see_also" content="https://brsolucoes.inf.br/">
+    
+    <!-- Pinterest específico -->
+    <meta name="pinterest-rich-pin" content="true">
+    
+    <!-- Telegram específico -->
+    <meta property="telegram:channel" content="@brsolucoes">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    
+    <!-- Preload Hero Image for LCP -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1974&auto=format&fit=crop" fetchpriority="high">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- TailwindCSS (Para produção, usar versão buildada minificada) -->
+    <!-- PRODUÇÃO: Substitua por <link rel="stylesheet" href="assets/css/tailwind.min.css"> -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(2, 28, 52, 0.8), rgba(2, 28, 52, 0.8)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1974&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            
+        }
+        /* Remover background-attachment fixed em mobile para performance */
+        @media (min-width: 768px) {
+            .hero-section {
+                background-attachment: fixed;
+            }
+        }
+        
+        .nav-scrolled #navbar-logo {
+            filter: brightness(0) saturate(100%); /* Torna a logo escura/preta */
+        }
+        .nav-scrolled #desktop-menu {
+            color: #1f2937; /* Cor de texto escura (gray-800) */
+        }
+        .nav-scrolled #desktop-menu a:hover {
+            color: #10b981; /* Cor verde para hover */
+        }
+        .nav-scrolled #nav-contact-btn {
+            background-color: #10b981; /* Fundo verde */
+            color: white;
+            border-color: transparent;
+        }
+        .nav-scrolled #nav-contact-btn:hover {
+            background-color: #059669;
+        }
+        .nav-scrolled #mobile-menu-button {
+            color: #1f2937; /* Ícone do menu mobile escuro */
+        }
+
+        /* Parallax para mobile usando pseudo-elemento */
+        @media (max-width: 767px) {
+            .hero-section {
+                overflow: hidden;
+                background-image: linear-gradient(rgba(2, 28, 52, 0.8), rgba(2, 28, 52, 0.8));
+                --parallax-y: 0px; /* Variável CSS para o JavaScript */
+            }
+            
+            .hero-section::before {
+                content: '';
+                position: absolute;
+                top: -20%;
+                left: 0;
+                right: 0;
+                bottom: -20%;
+                background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1974&auto=format&fit=crop');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                will-change: transform;
+                z-index: -1;
+                transform: translate3d(0, calc(-1 * var(--parallax-y)), 0);
+                transition: transform 0.1s ease-out;
+            }
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 128, 0, 0.3);
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Modal Styles */
+        #contactModal {
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+        }
+        
+        #contactModal.show {
+            animation: modalFadeIn 0.3s ease-out;
+        }
+        
+        #contactModal .modal-content {
+            animation: modalSlideIn 0.3s ease-out;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        #contactModal.show .modal-content {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                transform: scale(0.9) translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Form Field Focus States */
+        .form-field-focus {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-field-focus::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .form-field-focus:focus-within::after {
+            width: 100%;
+        }
+        
+        /* Enhanced Checkbox and Radio Styles */
+        input[type="checkbox"]:checked,
+        input[type="radio"]:checked {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        
+        input[type="checkbox"]:focus,
+        input[type="radio"]:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Button Hover Effects */
+        .btn-corporate {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-corporate::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-corporate:hover::before {
+            left: 100%;
+        }
+        
+        .btn-corporate:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        /* Service Selection Cards */
+        .service-card {
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+            transform: translateY(-1px);
+        }
+        
+        .service-card:has(input:checked) {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        }
+        
+        /* Company Size Selection */
+        .size-option {
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+        
+        .size-option:hover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        
+        .size-option:has(input:checked) {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+            font-weight: 600;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            #contactModal {
+                align-items: flex-start;
+                padding: 1rem 0.5rem;
+                padding-top: 2rem;
+            }
+            
+            #contactModal .modal-content {
+                margin: 0;
+                max-height: calc(100vh - 4rem);
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            /* Header fixo no mobile */
+            #contactModal .modal-header {
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                border-radius: 1rem 1rem 0 0;
+                flex-shrink: 0;
+            }
+            
+            /* Conteúdo rolável no mobile */
+            #contactModal .modal-body {
+                flex: 1;
+                overflow-y: auto;
+                padding: 1rem;
+                border-radius: 0 0 1rem 1rem;
+            }
+            
+            /* Logo maior no mobile */
+            #contactModal .mobile-logo {
+                height: 3rem !important;
+                width: auto !important;
+            }
+            
+            /* Ajustes no título mobile */
+            #contactModal .mobile-title {
+                font-size: 1.375rem;
+                line-height: 1.3;
+            }
+            
+            #contactModal .mobile-subtitle {
+                font-size: 0.875rem;
+                margin-top: 0.25rem;
+            }
+            
+            /* Benefits Section otimizada para mobile */
+            #contactModal .benefits-mobile {
+                margin-bottom: 1.5rem;
+                padding: 1rem;
+                background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            }
+            
+            #contactModal .benefits-title {
+                font-size: 1rem;
+                margin-bottom: 0.75rem;
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+            
+            #contactModal .benefits-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            #contactModal .benefit-item {
+                display: flex;
+                align-items: center;
+                font-size: 0.875rem;
+                padding: 0.25rem 0;
+            }
+            
+            #contactModal .benefit-dot {
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right: 0.5rem;
+                flex-shrink: 0;
+            }
+        }
+        
+        /* Custom Scrollbar for Modal */
+        #contactModal .modal-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #contactModal .modal-content::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+        
+        #contactModal .modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+            border-radius: 10px;
+        }
+        
+        #contactModal .modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #1d4ed8, #1e40af);
+        }
+
+        /* Plan Modal Styles */
+        .plan-modal-content {
+            will-change: transform, opacity;
+            backface-visibility: hidden;
+        }
+
+        .plan-modal-content h2 {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan-modal-content .close-plan-modal {
+            transition: all 0.2s ease;
+        }
+
+        .plan-modal-content .close-plan-modal:hover {
+            transform: rotate(90deg);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Scrollbar personalizada para modais dos planos */
+        .plan-modal-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .plan-modal-content::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .plan-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+            border-radius: 10px;
+        }
+
+        .plan-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #1d4ed8, #1e40af);
+        }
+
+        /* Animações para elementos dos modais de planos */
+        .plan-modal-content .space-y-3 > div {
+            opacity: 0;
+            transform: translateX(-10px);
+            animation: slideInLeft 0.3s ease-out forwards;
+        }
+
+        .plan-modal-content .space-y-3 > div:nth-child(1) { animation-delay: 0.1s; }
+        .plan-modal-content .space-y-3 > div:nth-child(2) { animation-delay: 0.15s; }
+        .plan-modal-content .space-y-3 > div:nth-child(3) { animation-delay: 0.2s; }
+        .plan-modal-content .space-y-3 > div:nth-child(4) { animation-delay: 0.25s; }
+        .plan-modal-content .space-y-3 > div:nth-child(5) { animation-delay: 0.3s; }
+        .plan-modal-content .space-y-3 > div:nth-child(6) { animation-delay: 0.35s; }
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* CTAs dos modais com efeito especial */
+        .plan-modal-cta {
+            position: relative;
+            overflow: hidden;
+            background-size: 200% 100%;
+            background-position: left;
+            transition: all 0.3s ease;
+        }
+
+        .plan-modal-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .plan-modal-cta:hover::before {
+            left: 100%;
+        }
+
+        .plan-modal-cta:hover {
+            background-position: right;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsividade para modais dos planos */
+        @media (max-width: 768px) {
+            .plan-modal-content {
+                margin: 1rem;
+                max-height: calc(100vh - 2rem);
+                width: calc(100% - 2rem);
+            }
+
+            .plan-modal-content .grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .plan-modal-content .text-4xl {
+                font-size: 2.5rem;
+            }
+
+            .plan-modal-content .text-3xl {
+                font-size: 2rem;
+            }
+
+            .plan-modal-content .px-8 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .plan-modal-content .py-6 {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        /* Efeitos hover nos cards de características */
+        .plan-modal-content .grid > div:hover {
+            background: rgba(59, 130, 246, 0.05);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            margin: -0.5rem;
+            transition: all 0.2s ease;
+        }
+        
+        /* Otimizações para Cards de Planos - Sobrescreve fade-in-section */
+        .plano-card {
+            will-change: transform, box-shadow;
+            backface-visibility: hidden;
+            perspective: 1000px;
+            transition: all 0.25s ease-out !important; /* Transição mais suave */
+            position: relative; /* Necessário para o pseudo-elemento */
+            /* overflow: hidden;  REMOVIDO para não cortar o badge */
+        }
+
+        /* Efeito de brilho que segue o mouse */
+        .plano-card::before {
+            content: "";
+            position: absolute;
+            top: var(--mouse-y, -100px);
+            left: var(--mouse-x, -100px);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: translate(-50%, -50%);
+            opacity: var(--mouse-opacity, 0);
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Garante que o mouse interaja com o card, não com o brilho */
+            z-index: 1;
+        }
+        
+        .plano-card > * {
+            position: relative;
+            z-index: 2; /* Garante que o conteúdo do card fique acima do brilho */
+        }
+
+        .plano-card:hover {
+            transform: translateY(-8px) rotateX(var(--rotate-x, 0)) rotateY(var(--rotate-y, 0));
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .plano-card-business:hover {
+            transform: translateY(-12px) rotateX(var(--rotate-x, 0)) rotateY(var(--rotate-y, 0));
+            box-shadow: 0 25px 50px -12px rgba(34, 197, 94, 0.3);
+            border-color: #059669 !important;
+        }
+        
+        .plano-button {
+            will-change: transform;
+            backface-visibility: hidden;
+            transition: all 0.15s ease-out !important;
+        }
+        
+        .plano-button:hover {
+            transform: scale(1.03) translateZ(0);
+        }
+        
+        /* Remove transições conflitantes do fade-in-section nos cards de planos */
+        .plano-card.fade-in-section {
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out !important;
+        }
+        
+        .plano-card.fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- Schema.org - Service Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Backup Corporativo",
+      "name": "Backup Corporativo com RTO garantido em contrato",
+      "description": "Serviço de backup corporativo com arquitetura 3-2-1-1-0, monitoramento 24/7 N3, criptografia AES-256 e compliance LGPD. RTO garantido de até 15 minutos.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://brsolucoes.inf.br/#organization",
+        "name": "B&R Soluções em TI",
+        "image": "https://brsolucoes.inf.br/assets/img/logo.svg",
+        "url": "https://brsolucoes.inf.br/",
+        "telephone": "+55-47-99981-7997",
+        "email": "contato@brsolucoes.inf.br",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Bahia, 8310, Sala 04",
+          "addressLocality": "Blumenau",
+          "addressRegion": "SC", 
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-26.9194",
+          "longitude": "-49.0661"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Santa Catarina, Brasil"
+        },
+        "sameAs": [
+          "https://brsolucoes.inf.br/"
+        ]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Planos de Backup Corporativo",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Backup Corporativo Essencial"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Backup Corporativo Business"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Backup Corporativo Enterprise"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Schema.org - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://brsolucoes.inf.br/#organization",
+      "name": "B&R Soluções em TI",
+      "image": "https://brsolucoes.inf.br/assets/img/logo.svg",
+      "logo": "https://brsolucoes.inf.br/assets/img/logo.svg",
+      "url": "https://brsolucoes.inf.br/",
+      "telephone": "+55-47-99981-7997",
+      "email": "contato@brsolucoes.inf.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Bahia, 8310, Sala 04",
+        "addressLocality": "Blumenau",
+        "addressRegion": "SC",
+        "postalCode": "89012-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-26.9194",
+        "longitude": "-49.0661"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Santa Catarina, Brasil"
+      },
+      "sameAs": [
+        "https://brsolucoes.inf.br/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-47-99981-7997",
+        "contactType": "customer support",
+        "availableLanguage": "Portuguese"
+      }
+    }
+    </script>
+
+    <!-- Schema.org - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Preciso de internet dedicada ou minha conexão atual é suficiente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nossa solução foi desenvolvida para ser eficiente com a banda disponível. Utilizamos algoritmos de compressão e deduplicação que reduzem significativamente o volume de dados transferidos. Para a maioria das empresas, uma conexão de 10-20 Mbps é suficiente. Fazemos uma análise prévia da sua infraestrutura e dimensionamos a solução adequadamente."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "Vocês integram com Veeam e Acronis que já uso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Somos parceiros certificados Veeam e Acronis. Nossa solução se integra perfeitamente com suas ferramentas existentes, potencializando-as com nossa infraestrutura cloud. Você mantém os processos que já conhece e adiciona nossa camada de proteção externa, monitoramento 24/7 e garantias contratuais de RTO/RPO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os dados ficam no Brasil? É compatível com LGPD?", 
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutamente. Nossos data centers primários estão localizados no Brasil (São Paulo e Rio de Janeiro), sendo 100% compatíveis com a LGPD. Possuímos certificações ISO 27001, SOC 2 Type II e auditoria anual de compliance. Para clientes Enterprise, oferecemos também cópias geográficas internacionais como camada adicional de proteção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como garantem que conseguirei restaurar quando precisar?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Realizamos testes automatizados de restore em todos os planos (frequência varia por plano). Cada backup passa por validação de integridade e teste de recuperação. Mantemos logs detalhados e fornecemos relatórios mensais. Além disso, oferecemos garantia contratual de RTO - se não conseguirmos restaurar no tempo prometido, há penalizações financeiras pré-definidas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é o investimento? Posso começar com um piloto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O investimento varia conforme o volume de dados e nível de SLA escolhido. Planos começam em R$ 890/mês para pequenas empresas. Oferecemos avaliação técnica inicial sem compromisso e possibilidade de piloto de 30 dias para validar a solução. Todos os custos são previsíveis, sem surpresas - você paga apenas pelo que utilizar."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Google Analytics 4 -->
+    <!-- ALTERAR: Substitua G-XXXXXXXXXX pelo seu ID do Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" defer></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', {
+        page_title: 'Backup Corporativo RTO 15min',
+        page_location: 'https://brsolucoes.inf.br/',
+        content_group1: 'Landing Page'
+      });
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <!-- ALTERAR: Substitua XXXXXXXXXXXXXXX pelo seu ID do Meta Pixel -->
+    <script defer>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="text-gray-800 antialiased">
+
+    <div id="top"></div>
+
+    <!-- Header Section -->
+    <header class="hero-section text-white relative">
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="fixed top-0 left-0 right-0 z-30 bg-transparent transition-all duration-300">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#top" class="flex items-center space-x-2 flex-shrink-0">
+                    <img src="assets/img/logo.svg" alt="Logo B&R Soluções em TI" class="h-8 md:h-10 transition-all duration-300" id="navbar-logo">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div id="desktop-menu" class="hidden md:flex items-center space-x-6 text-sm font-medium text-white">
+                    <a href="#beneficios" class="hover:text-green-300 transition-colors">Benefícios</a>
+                    <a href="#tecnico" class="hover:text-green-300 transition-colors">Diferenciais</a>
+                    <a href="#planos-sla" class="hover:text-green-300 transition-colors">Planos</a>
+                    <a href="#faq" class="hover:text-green-300 transition-colors">FAQ</a>
+                    <a href="#cta-final" id="nav-contact-btn" class="bg-white/10 hover:bg-white/20 text-white py-2 px-4 rounded-md transition-colors">Contato</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Abrir menu de navegação">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-blur-sm">
+                <a href="#beneficios" class="block py-3 px-6 text-white hover:bg-green-500">Benefícios</a>
+                <a href="#tecnico" class="block py-3 px-6 text-white hover:bg-green-500">Diferenciais</a>
+                <a href="#planos-sla" class="block py-3 px-6 text-white hover:bg-green-500">Planos</a>
+                <a href="#faq" class="block py-3 px-6 text-white hover:bg-green-500">FAQ</a>
+                <a href="#cta-final" class="block py-3 px-6 text-white hover:bg-green-500">Contato</a>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-6 pt-32 pb-24 md:pt-48 md:pb-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight fade-in-section is-visible">
+                Backup Corporativo com RTO garantido em contrato — <span class="text-green-400">restaure em até 15 min.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 fade-in-section is-visible" style="transition-delay: 150ms;">
+                Arquitetura 3-2-1-1-0 com monitoramento 24/7 N3. Criptografia AES-256, backup imutável (Object Lock) e compliance total com LGPD. Seus dados protegidos contra ransomware e falhas humanas.
+            </p>
+            <button id="heroCtaBtn" class="cta-button bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg inline-block shadow-lg fade-in-section is-visible" style="transition-delay: 300ms;">
+                Fale com um especialista
+            </button>
+            <p class="mt-4 text-sm text-gray-400 fade-in-section is-visible" style="transition-delay: 450ms;">Respondemos em até 15 min.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Benefícios Section -->
+        <section id="beneficios" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 fade-in-section">Sua operação não pode parar. Nós garantimos isso.</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto fade-in-section">Resultados mensuráveis que nosso serviço de backup entrega:</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Benefício 1 -->
+                    <div class="p-8 border border-gray-200 rounded-lg shadow-sm bg-gray-50 fade-in-section">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">99,9% Menos Risco de Perda</h3>
+                        <p class="text-gray-600">Com nossa tripla redundância (local, nuvem nacional e nuvem internacional), reduzimos drasticamente o risco de perda de dados críticos.</p>
+                    </div>
+                    <!-- Benefício 2 -->
+                    <div class="p-8 border border-gray-200 rounded-lg shadow-sm bg-gray-50 fade-in-section">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Recuperação 8x Mais Rápida</h3>
+                        <p class="text-gray-600">Restaure arquivos, bancos de dados ou servidores inteiros em minutos. Nosso RTO (Recovery Time Objective) médio é inferior a 15 minutos.</p>
+                    </div>
+                    <!-- Benefício 3 -->
+                    <div class="p-8 border border-gray-200 rounded-lg shadow-sm bg-gray-50 fade-in-section">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Economia de até 40%</h3>
+                        <p class="text-gray-600">Elimine custos com hardware, licenças de software e horas de TI gerenciando backups. Pague apenas pelo que usa, com total escalabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Técnica -->
+        <section id="tecnico" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 fade-in-section">Diferenciais Técnicos de Nível Enterprise</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in-section">Arquitetura 3-2-1-1-0 com as melhores práticas de segurança e compliance do mercado.</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-8">
+                    <div class="flex items-start fade-in-section">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-blue-600 text-white rounded-full text-lg">🔐</div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Criptografia AES-256 bits</h3>
+                            <p class="text-gray-600 mt-2">Seus dados são criptografados na origem, em trânsito e em repouso. O mesmo padrão militar usado por bancos centrais e agências governamentais mundiais.</p>
+                        </div>
+                    </div>
+                     <div class="flex items-start fade-in-section">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-blue-600 text-white rounded-full text-lg">🛡️</div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Backup Imutável com Object Lock</h3>
+                            <p class="text-gray-600 mt-2">Proteção definitiva contra ransomware. Uma vez gravado, seu backup não pode ser alterado, corrompido ou deletado por nenhuma ameaça externa.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start fade-in-section">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-blue-600 text-white rounded-full text-lg">📋</div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">100% Compliance LGPD</h3>
+                            <p class="text-gray-600 mt-2">Infraestrutura e processos certificados para Lei Geral de Proteção de Dados. Dados armazenados em território nacional com auditoria completa.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start fade-in-section">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-blue-600 text-white rounded-full text-lg">👨‍💻</div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Monitoramento Proativo 24/7 N3</h3>
+                            <p class="text-gray-600 mt-2">Nossa equipe especializada de nível 3 monitora o sucesso dos seus backups em tempo real. Falhas são identificadas e corrigidas antes de impactar sua operação.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start fade-in-section">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-blue-600 text-white rounded-full text-lg">🏗️</div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Arquitetura 3-2-1-1-0</h3>
+                            <p class="text-gray-600 mt-2">3 cópias de segurança, 2 tipos de mídia diferentes, 1 cópia offsite, 1 cópia imutável, 0 (zero) erros tolerados. A regra de ouro da proteção de dados.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start fade-in-section">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-blue-600 text-white rounded-full text-lg">⚡</div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">RTO Garantido < 15min</h3>
+                            <p class="text-gray-600 mt-2">Recovery Time Objective contratualmente garantido. Restauração de arquivos individuais em segundos, VMs completas em até 15 minutos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planos & SLA Section -->
+        <section id="planos-sla" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4 fade-in-section">Planos & SLA</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in-section">Escolha o nível de proteção ideal para sua empresa. Todos com garantias contratuais de RTO/RPO.</p>
+                </div>
+                
+                <div class="max-w-7xl mx-auto">
+                    <!-- Cards dos Planos -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                        
+                        <!-- Plano Essencial -->
+                        <div class="plano-card bg-white rounded-2xl shadow-lg border border-gray-200 p-8 relative fade-in-section">
+                            <div class="text-center mb-6">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">ESSENCIAL</h3>
+                                <p class="text-gray-600 mb-4">Proteção básica para pequenas empresas</p>
+                                <div class="text-3xl font-bold text-blue-600 mb-1">R$ 890</div>
+                                <div class="text-sm text-gray-500">por mês*</div>
+                            </div>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">RPO: 24 horas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">RTO: 4 horas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Retenção: 30 dias</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Backup Imutável</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Monitoramento business hours</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">SLA 99,5%</span>
+                                </li>
+                            </ul>
+                            
+                            <button data-plan="essencial" class="saiba-mais-btn plano-button w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl">
+                                Saiba mais
+                            </button>
+                        </div>
+
+                        <!-- Plano Business - DESTAQUE -->
+                        <div class="plano-card plano-card-business bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-2xl border-2 border-green-400 p-8 relative fade-in-section">
+                            <!-- Badge "Mais Popular" -->
+                            <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                                <div class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                                    🔥 MAIS POPULAR
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mb-6">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-green-200 rounded-full mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">BUSINESS</h3>
+                                <p class="text-gray-700 mb-4">Ideal para médias empresas</p>
+                                <div class="text-4xl font-bold text-green-600 mb-1">R$ 1.890</div>
+                                <div class="text-sm text-gray-600">por mês*</div>
+                                <div class="mt-2 text-xs text-green-700 font-semibold">✨ Melhor custo-benefício</div>
+                            </div>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-800 font-semibold">RPO: 4 horas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-800 font-semibold">RTO: 1 hora</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-800 font-semibold">Retenção: 90 dias</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-800 font-semibold">✓ Backup Imutável</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-800 font-semibold">Monitoramento 24/7 N2</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-800 font-semibold">SLA 99,9%</span>
+                                </li>
+                            </ul>
+                            
+                            <button data-plan="business" class="saiba-mais-btn plano-button w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg">
+                                Saiba mais
+                            </button>
+                        </div>
+
+                        <!-- Plano Enterprise -->
+                        <div class="plano-card bg-white rounded-2xl shadow-lg border border-gray-200 p-8 relative fade-in-section">
+                            <div class="text-center mb-6">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">ENTERPRISE</h3>
+                                <p class="text-gray-600 mb-4">Máxima proteção para grandes empresas</p>
+                                <div class="text-3xl font-bold text-purple-600 mb-1">R$ 3.490</div>
+                                <div class="text-sm text-gray-500">por mês*</div>
+                            </div>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">RPO: 15 minutos</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">RTO: < 15 min</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Retenção: 7 anos</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">✓ Backup Imutável</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">Monitoramento 24/7 N3</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700">SLA 99,99%</span>
+                                </li>
+                            </ul>
+                            
+                            <button data-plan="enterprise" class="saiba-mais-btn plano-button w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Recursos Inclusos -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 fade-in-section">
+                        <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">✅ Inclusos em todos os planos</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Criptografia AES-256</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Compliance LGPD</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Suporte especializado</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Integração Veeam/Acronis</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Testes de restore</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Relatórios detalhados</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Final -->
+                    <div class="text-center fade-in-section">
+                        <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 text-white">
+                            <h3 class="text-2xl md:text-3xl font-bold mb-4">Não sabe qual plano escolher?</h3>
+                            <p class="text-lg mb-6 opacity-90">Receba uma análise técnica gratuita e descubra o plano ideal para sua empresa</p>
+                            <button id="planosCtaBtn" class="plano-button bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-10 rounded-xl text-lg shadow-lg">
+                                🎯 Receber Análise Gratuita
+                            </button>
+                            <p class="text-sm mt-4 opacity-75">* Valores a partir de. Consulte condições especiais para volumes maiores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prova Social - Google Reviews Style -->
+        <section id="prova-social" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 fade-in-section">Empresas que Confiam na Nossa Proteção</h2>
+                    <p class="text-lg text-gray-600 fade-in-section">Veja o que nossos clientes dizem sobre nós.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto bg-white border border-gray-200 rounded-xl shadow-lg p-6 md:p-8 fade-in-section">
+                    <!-- Card Header -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-gray-200 pb-4 mb-6">
+                        <div class="flex items-center mb-4 sm:mb-0">
+                            <svg class="w-8 h-8 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#4285F4" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"></path></svg>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">B&R Soluções em TI</h3>
+                                <p class="text-sm text-gray-500">Avaliações do Google</p>
+                            </div>
+                        </div>
+                        <div class="text-left sm:text-right">
+                            <div class="flex items-center">
+                                <span class="text-2xl font-bold text-gray-800 mr-2">5.0</span>
+                                <div class="flex text-yellow-400">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">Baseado em 52 avaliações</p>
+                        </div>
+                    </div>
+                    <!-- Depoimentos -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/img/ale.png" alt="Foto de Alessandra Quintino" class="h-10 w-10 rounded-full mr-3" width="40" height="40" loading="lazy" decoding="async">
+                                <div>
+                                    <p class="font-bold">Alessandra Quintino</p>
+                                    <div class="flex text-yellow-400">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                        <!-- Repetir 5x --> <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">"Quero destacar aqui o excelente trabalho da B&R tanto no profissionalismo, agilidade e um atendimento impecável que fazem toda a diferença, e vocês entregam tudo isso com maestria. Equipe altamente qualificada e sempre pronta para oferecer as melhores soluções. Parabéns pelo serviço de alto nível!!!"</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                             <div class="flex items-center mb-4">
+                                <img src="assets/img/mara.png" alt="Foto de Maraysa Cardoso" class="h-10 w-10 rounded-full mr-3" width="40" height="40" loading="lazy" decoding="async">
+                                <div>
+                                    <p class="font-bold">Maraysa Cardoso</p>
+                                    <div class="flex text-yellow-400">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                        <!-- Repetir 5x --> <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.368-2.448a1 1 0 00-1.175 0l-3.368 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.05 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69L9.049 2.927z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">"Serviço de primeira! Fui atendido por uma equipe extremamente qualificada, que resolveu meu problema com rapidez e eficiência. Totalmente satisfeita! 👏"</p>
+                        </div>
+                    </div>
+                    <!-- CTA Button -->
+                    <div class="text-center mt-8">
+                        <a href="https://www.google.com/search?q=b%26rsolucoes" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                            Veja todas as avaliações no Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antes x Depois -->
+        <section id="antes-depois" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 fade-in-section">A Transformação do seu Gerenciamento de Dados</h2>
+                    <p class="text-lg text-gray-600 fade-in-section">Deixe a incerteza para trás. Adote a estratégia da continuidade.</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 shadow-xl rounded-lg overflow-hidden border border-gray-200 fade-in-section">
+                    <div class="p-8 bg-red-50">
+                        <h3 class="text-2xl font-bold text-red-800 mb-4">ANTES: O Risco Constante</h3>
+                        <ul class="space-y-3 text-red-700">
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3">×</span>Backups manuais, lentos e suscetíveis a falhas.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3">×</span>Vulnerabilidade total a ataques de ransomware.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3">×</span>Dias de inatividade em caso de desastre.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3">×</span>Nenhuma garantia de recuperação dos dados.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3">×</span>Custos ocultos com hardware e equipe de TI sobrecarregada.</li>
+                        </ul>
+                    </div>
+                     <div class="p-8 bg-green-50">
+                        <h3 class="text-2xl font-bold text-green-800 mb-4">DEPOIS: Segurança e Continuidade</h3>
+                        <ul class="space-y-3 text-green-700">
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3 text-green-600">✓</span>Processos 100% automatizados e monitorados.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3 text-green-600">✓</span>Proteção imutável que neutraliza o ransomware.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3 text-green-600">✓</span>Recuperação da operação em minutos (RTO < 15min).</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3 text-green-600">✓</span>Garantia contratual de integridade dos dados.</li>
+                            <li class="flex items-start"><span class="font-bold text-xl mr-3 text-green-600">✓</span>Previsibilidade de custos e equipe de TI focada no core business.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 fade-in-section">Perguntas Frequentes</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto fade-in-section">Tire suas principais dúvidas sobre backup corporativo</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6">
+                        <!-- Pergunta 1 -->
+                        <div class="border border-gray-200 rounded-lg fade-in-section">
+                            <button class="w-full px-6 py-4 text-left text-lg font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex justify-between items-center" onclick="toggleFaq(this)">
+                                Preciso de internet dedicada ou minha conexão atual é suficiente?
+                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="px-6 pb-4 text-gray-600 hidden">
+                                <p>Nossa solução foi desenvolvida para ser eficiente com a banda disponível. Utilizamos algoritmos de compressão e deduplicação que reduzem significativamente o volume de dados transferidos. Para a maioria das empresas, uma conexão de 10-20 Mbps é suficiente. Fazemos uma análise prévia da sua infraestrutura e dimensionamos a solução adequadamente.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 2 -->
+                        <div class="border border-gray-200 rounded-lg fade-in-section">
+                            <button class="w-full px-6 py-4 text-left text-lg font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex justify-between items-center" onclick="toggleFaq(this)">
+                                Vocês integram com Veeam e Acronis que já uso?
+                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="px-6 pb-4 text-gray-600 hidden">
+                                <p>Sim! Somos parceiros certificados Veeam e Acronis. Nossa solução se integra perfeitamente com suas ferramentas existentes, potencializando-as com nossa infraestrutura cloud. Você mantém os processos que já conhece e adiciona nossa camada de proteção externa, monitoramento 24/7 e garantias contratuais de RTO/RPO.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 3 -->
+                        <div class="border border-gray-200 rounded-lg fade-in-section">
+                            <button class="w-full px-6 py-4 text-left text-lg font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex justify-between items-center" onclick="toggleFaq(this)">
+                                Os dados ficam no Brasil? É compatível com LGPD?
+                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="px-6 pb-4 text-gray-600 hidden">
+                                <p>Absolutamente. Nossos data centers primários estão localizados no Brasil (São Paulo e Rio de Janeiro), sendo 100% compatíveis com a LGPD. Possuímos certificações ISO 27001, SOC 2 Type II e auditoria anual de compliance. Para clientes Enterprise, oferecemos também cópias geográficas internacionais como camada adicional de proteção.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 4 -->
+                        <div class="border border-gray-200 rounded-lg fade-in-section">
+                            <button class="w-full px-6 py-4 text-left text-lg font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex justify-between items-center" onclick="toggleFaq(this)">
+                                Como garantem que conseguirei restaurar quando precisar?
+                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="px-6 pb-4 text-gray-600 hidden">
+                                <p>Realizamos testes automatizados de restore em todos os planos (frequência varia por plano). Cada backup passa por validação de integridade e teste de recuperação. Mantemos logs detalhados e fornecemos relatórios mensais. Além disso, oferecemos garantia contratual de RTO - se não conseguirmos restaurar no tempo prometido, há penalizações financeiras pré-definidas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 5 -->
+                        <div class="border border-gray-200 rounded-lg fade-in-section">
+                            <button class="w-full px-6 py-4 text-left text-lg font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 flex justify-between items-center" onclick="toggleFaq(this)">
+                                Qual é o investimento? Posso começar com um piloto?
+                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="px-6 pb-4 text-gray-600 hidden">
+                                <p>O investimento varia conforme o volume de dados e nível de SLA escolhido. Planos começam em R$ 890/mês para pequenas empresas. Oferecemos avaliação técnica inicial sem compromisso e possibilidade de piloto de 30 dias para validar a solução. Todos os custos são previsíveis, sem surpresas - você paga apenas pelo que utilizar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section id="cta-final" class="py-20 bg-blue-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4 fade-in-section">Pronto para Blindar sua Empresa?</h2>
+                <p class="text-lg text-blue-200 max-w-3xl mx-auto mb-8 fade-in-section">Um único incidente de perda de dados pode custar o futuro do seu negócio. A prevenção é o melhor investimento. Receba um diagnóstico de vulnerabilidade da sua estrutura atual, sem custo e sem compromisso.</p>
+                <button onclick="openContactModal()" class="cta-button bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg inline-block shadow-lg fade-in-section transition-all duration-300 hover:scale-105">
+                    Agendar Diagnóstico Gratuito
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="assets/img/logo.svg" alt="Logo B&R Soluções em TI" class="h-10 mb-4" width="120" height="40" loading="lazy" decoding="async">
+                    <p class="text-gray-400">Protegendo os ativos mais valiosos do seu negócio com tecnologia de ponta e expertise incomparável.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><a href="#beneficios" class="hover:text-blue-400 transition-colors">Benefícios</a></li>
+                        <li><a href="#tecnico" class="hover:text-blue-400 transition-colors">Diferenciais Técnicos</a></li>
+                        <li><a href="#prova-social" class="hover:text-blue-400 transition-colors">Prova Social</a></li>
+                        <li><a href="#privacy-policy" class="hover:text-blue-400 transition-colors">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contato</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Email: contato@brsolucoes.inf.br</li>
+                        <li>Telefone: (47) 99981-7997</li>
+                        <li>Endereço: Rua Bahia, 8310, Sala 04 - Blumenau, SC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> B&R Soluções em TI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Política de Privacidade (Seção Oculta) -->
+    <section id="privacy-policy" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-4xl p-8 relative max-h-96 overflow-y-auto">
+            <button onclick="document.getElementById('privacy-policy').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="Fechar política">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <div class="text-center mb-6">
+                <h2 id="privacy-title" class="text-2xl font-bold text-gray-800 mb-4">Política de Privacidade</h2>
+                <p class="text-gray-600">Última atualização: 19 de setembro de 2025</p>
+            </div>
+            <div class="text-gray-700 space-y-4">
+                <h3 class="text-lg font-semibold text-gray-800">1. Coleta de Dados</h3>
+                <p>Coletamos apenas os dados necessários para fornecer nossos serviços: nome, email, telefone e mensagens enviadas através do formulário de contato.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800">2. Uso dos Dados</h3>
+                <p>Os dados coletados são utilizados exclusivamente para: responder suas solicitações, fornecer suporte técnico, e enviar informações relevantes sobre nossos serviços.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800">3. Cookies e Analytics</h3>
+                <p>Utilizamos Google Analytics e Meta Pixel para melhorar nossos serviços. Estes cookies nos ajudam a entender como você interage com nosso site.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800">4. Compartilhamento</h3>
+                <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros, exceto quando necessário para prestar nossos serviços.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800">5. Segurança</h3>
+                <p>Implementamos medidas de segurança técnicas e organizacionais para proteger seus dados contra acesso não autorizado, alteração ou destruição.</p>
+                
+                <h3 class="text-lg font-semibold text-gray-800">6. Seus Direitos (LGPD)</h3>
+                <p>Você tem direito a: acessar, corrigir, excluir seus dados, solicitar portabilidade e revogar consentimento. Entre em contato: contato@brsolucoes.inf.br</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Scroll to Top -->
+    <a href="#top" id="scrollToTopBtn" class="hidden fixed bottom-5 right-5 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </a>
+
+    <!-- Botão Flutuante "Fale com um especialista" -->
+    <button id="floatingCtaBtn" class="hidden fixed bottom-[85px] right-5 bg-blue-700 hover:bg-blue-800 text-white py-3 px-5 rounded-full shadow-lg transition-all duration-300 z-40 font-semibold flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+        Fale com um especialista
+    </button>
+
+    <!-- Modais dos Planos -->
+    <!-- Modal Plano Essencial -->
+    <div id="planModal-essencial" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-essencial">
+        <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
+            <!-- Header -->
+            <div class="relative bg-gradient-to-r from-blue-600 to-blue-700 rounded-t-2xl px-8 py-6 text-white">
+                <button class="close-plan-modal absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-blue-100 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="modal-title-essencial" class="text-3xl font-bold">Plano Essencial</h2>
+                        <p class="text-blue-100 mt-1">Proteção básica para pequenas empresas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="px-8 py-6">
+                <!-- Preço -->
+                <div class="text-center mb-6 p-6 bg-blue-50 rounded-xl border border-blue-200">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">R$ 890</div>
+                    <div class="text-gray-600">por mês*</div>
+                    <div class="text-sm text-gray-500 mt-2">*A partir de 500GB de dados</div>
+                </div>
+
+                <!-- Características Principais -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Principais Características
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span class="text-gray-700">RPO: 24 horas</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span class="text-gray-700">RTO: 4 horas</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span class="text-gray-700">Retenção: 30 dias</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span class="text-gray-700">SLA: 99,5%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O que está incluído -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        O que está incluído
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Backup automatizado diário</div>
+                                <div class="text-sm text-gray-600">Backups executados automaticamente todos os dias</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Monitoramento em horário comercial</div>
+                                <div class="text-sm text-gray-600">Acompanhamento de segunda a sexta, das 8h às 18h</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Criptografia AES-256</div>
+                                <div class="text-sm text-gray-600">Proteção militar para seus dados</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Relatórios mensais</div>
+                                <div class="text-sm text-gray-600">Status detalhado dos seus backups</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Suporte técnico</div>
+                                <div class="text-sm text-gray-600">Atendimento especializado quando precisar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Limitações -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.996-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                        </svg>
+                        Limitações do Plano
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Não inclui Backup Imutável</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Monitoramento apenas em horário comercial</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">Retenção limitada a 30 dias</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center pt-4">
+                    <button class="plan-modal-cta w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4">
+                        Solicitar Orçamento do Plano Essencial
+                    </button>
+                    <p class="text-sm text-gray-500">Resposta em até 2 horas úteis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Plano Business -->
+    <div id="planModal-business" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-business">
+        <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
+            <!-- Header -->
+            <div class="relative bg-gradient-to-r from-green-600 to-green-700 rounded-t-2xl px-8 py-6 text-white">
+                <button class="close-plan-modal absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                
+                <!-- Badge Mais Popular -->
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                        🔥 MAIS POPULAR
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-4">
+                    <div class="p-3 bg-green-100 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="modal-title-business" class="text-3xl font-bold">Plano Business</h2>
+                        <p class="text-green-100 mt-1">Ideal para médias empresas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="px-8 py-6">
+                <!-- Preço -->
+                <div class="text-center mb-6 p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
+                    <div class="text-4xl font-bold text-green-600 mb-2">R$ 1.890</div>
+                    <div class="text-gray-600">por mês*</div>
+                    <div class="text-sm text-gray-500 mt-2">*A partir de 1TB de dados</div>
+                    <div class="text-sm text-green-700 font-semibold mt-1">✨ Melhor custo-benefício</div>
+                </div>
+
+                <!-- Características Principais -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Principais Características
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">RPO: 4 horas</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">RTO: 1 hora</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">Retenção: 90 dias</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">SLA: 99,9%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O que está incluído -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        O que está incluído
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Backup automatizado a cada 4 horas</div>
+                                <div class="text-sm text-gray-600">Proteção contínua com baixo RPO</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">🛡️ Backup Imutável (Object Lock)</div>
+                                <div class="text-sm text-gray-600">Proteção absoluta contra ransomware</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Monitoramento 24/7 N2</div>
+                                <div class="text-sm text-gray-600">Equipe especializada de plantão</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Testes de restore semanais</div>
+                                <div class="text-sm text-gray-600">Validação automática da integridade</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Dashboard em tempo real</div>
+                                <div class="text-sm text-gray-600">Visibilidade completa dos seus backups</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Suporte prioritário</div>
+                                <div class="text-sm text-gray-600">Atendimento premium quando precisar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefícios Exclusivos -->
+                <div class="mb-6 p-4 bg-green-50 rounded-xl border border-green-200">
+                    <h3 class="text-lg font-bold text-green-800 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                        </svg>
+                        Benefícios Exclusivos
+                    </h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                            <span class="text-green-700">Integração com Veeam e Acronis</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                            <span class="text-green-700">Replicação multi-região automática</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                            <span class="text-green-700">Consultor técnico dedicado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center pt-4">
+                    <button class="plan-modal-cta w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4 shadow-lg">
+                        Solicitar Orçamento do Plano Business
+                    </button>
+                    <p class="text-sm text-gray-500">Resposta em até 2 horas úteis • Mais escolhido pelas empresas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Plano Enterprise -->
+    <div id="planModal-enterprise" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title-enterprise">
+        <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 scale-95 opacity-0 plan-modal-content">
+            <!-- Header -->
+            <div class="relative bg-gradient-to-r from-purple-600 to-purple-700 rounded-t-2xl px-8 py-6 text-white">
+                <button class="close-plan-modal absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-purple-100 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 id="modal-title-enterprise" class="text-3xl font-bold">Plano Enterprise</h2>
+                        <p class="text-purple-100 mt-1">Máxima proteção para grandes empresas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="px-8 py-6">
+                <!-- Preço -->
+                <div class="text-center mb-6 p-6 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-200">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">R$ 3.490</div>
+                    <div class="text-gray-600">por mês*</div>
+                    <div class="text-sm text-gray-500 mt-2">*A partir de 5TB de dados</div>
+                    <div class="text-sm text-purple-700 font-semibold mt-1">🚀 Máxima Performance</div>
+                </div>
+
+                <!-- Características Principais -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Principais Características
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">RPO: 15 minutos</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">RTO: < 15 min</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">Retenção: 7 anos</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                            <span class="text-gray-700 font-semibold">SLA: 99,99%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O que está incluído -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        O que está incluído
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Backup contínuo (CDP)</div>
+                                <div class="text-sm text-gray-600">Continuous Data Protection a cada 15 minutos</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">🛡️ Backup Imutável + Air Gap</div>
+                                <div class="text-sm text-gray-600">Proteção máxima contra ameaças avançadas</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Monitoramento 24/7 N3</div>
+                                <div class="text-sm text-gray-600">Especialistas de nível 3 dedicados</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Disaster Recovery Site</div>
+                                <div class="text-sm text-gray-600">Site secundário para continuidade do negócio</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">Account Manager dedicado</div>
+                                <div class="text-sm text-gray-600">Gerente de conta exclusivo para sua empresa</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-gray-800">SLA Premium com penalizações</div>
+                                <div class="text-sm text-gray-600">Garantias contratuais rigorosas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recursos Avançados -->
+                <div class="mb-6 p-4 bg-purple-50 rounded-xl border border-purple-200">
+                    <h3 class="text-lg font-bold text-purple-800 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                        Recursos Enterprise Exclusivos
+                    </h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                            <span class="text-purple-700">Criptografia customizada por empresa</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                            <span class="text-purple-700">Auditoria de compliance personalizada</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                            <span class="text-purple-700">Integração com sistemas legados</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                            <span class="text-purple-700">Treinamento da equipe de TI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center pt-4">
+                    <button class="plan-modal-cta w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 mb-4 shadow-lg">
+                        Solicitar Orçamento do Plano Enterprise
+                    </button>
+                    <p class="text-sm text-gray-500">Resposta em até 2 horas úteis • Solução para grandes empresas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contato Corporativo -->
+    <div id="contactModal" style="display: none;" class="fixed inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <!-- Modal Container with Enhanced Design -->
+        <div class="bg-gradient-to-br from-white to-gray-50 text-gray-800 rounded-2xl shadow-2xl border border-gray-200 w-full max-w-xl mx-4 my-8 relative transform transition-all duration-300 scale-95 opacity-0 modal-content">
+            <!-- Header Section -->
+            <div class="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 rounded-t-2xl px-8 py-6 text-white modal-header">
+                <button id="closeModalBtn" class="absolute top-4 right-4 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-lg p-1 transition-all duration-200" aria-label="Fechar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 rounded-xl">
+                        <img src="assets/img/logo.svg" alt="Logo B&R Soluções em TI" class="h-8 w-auto mobile-logo" width="32" height="32" loading="lazy" decoding="async">
+                    </div>
+                    <div>
+                        <h2 id="modal-title" class="text-2xl font-bold mobile-title">Auditoria Gratuita de Backup</h2>
+                        <p class="text-blue-100 mt-1 mobile-subtitle">Análise técnica completa da sua infraestrutura</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="px-8 py-6 modal-body">
+                <!-- Benefits Section -->
+                <div class="mb-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-100 benefits-mobile">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center benefits-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                        O que você receberá:
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700 benefits-grid">
+                        <div class="flex items-center benefit-item">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
+                            Análise de vulnerabilidades
+                        </div>
+                        <div class="flex items-center benefit-item">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
+                            Relatório de backup atual
+                        </div>
+                        <div class="flex items-center benefit-item">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
+                            Recomendações técnicas
+                        </div>
+                        <div class="flex items-center benefit-item">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 benefit-dot"></span>
+                            Orçamento personalizado
+                        </div>
+                    </div>
+                </div></div>
+                <!-- Formulário Corporativo -->
+                <form id="contactForm" class="space-y-6">
+                    <!-- Nome e Cargo -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Nome Completo *
+                                <span class="text-red-500 ml-1">•</span>
+                            </label>
+                            <div class="relative">
+                                <input type="text" id="name" name="name" 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
+                                       placeholder="João Silva" 
+                                       required aria-describedby="name-error">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </div>
+                            <div id="name-error" class="text-red-500 text-sm mt-1 hidden" role="alert"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="position" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Cargo/Função
+                            </label>
+                            <div class="relative">
+                                <select id="position" name="position" 
+                                        class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12 appearance-none">
+                                    <option value="">Selecione seu cargo</option>
+                                    <option value="CEO/Diretor">CEO/Diretor</option>
+                                    <option value="Gerente de TI">Gerente de TI</option>
+                                    <option value="Analista de TI">Analista de TI</option>
+                                    <option value="Administrador de Sistemas">Administrador de Sistemas</option>
+                                    <option value="Coordenador">Coordenador</option>
+                                    <option value="Sócio/Proprietário">Sócio/Proprietário</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 absolute right-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Empresa e CNPJ -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Empresa *
+                                <span class="text-red-500 ml-1">•</span>
+                            </label>
+                            <div class="relative">
+                                <input type="text" id="company" name="company" 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
+                                       placeholder="Nome da sua empresa" 
+                                       required aria-describedby="company-error">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                            <div id="company-error" class="text-red-500 text-sm mt-1 hidden" role="alert"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="cnpj" class="block text-sm font-semibold text-gray-700 mb-2">
+                                CNPJ (Opcional)
+                            </label>
+                            <div class="relative">
+                                <input type="text" id="cnpj" name="cnpj" 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
+                                       placeholder="00.000.000/0001-00"
+                                       aria-describedby="cnpj-error">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div id="cnpj-error" class="text-red-500 text-sm mt-1 hidden" role="alert"></div>
+                        </div>
+                    </div>
+
+                    <!-- E-mail e Telefone -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                E-mail Corporativo *
+                                <span class="text-red-500 ml-1">•</span>
+                            </label>
+                            <div class="relative">
+                                <input type="email" id="email" name="email" 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
+                                       placeholder="joao@suaempresa.com.br" 
+                                       required aria-describedby="email-error">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 012 2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div id="email-error" class="text-red-500 text-sm mt-1 hidden" role="alert"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                Telefone/WhatsApp *
+                                <span class="text-red-500 ml-1">•</span>
+                            </label>
+                            <div class="relative">
+                                <input type="tel" id="phone" name="phone" 
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pl-12" 
+                                       placeholder="(47) 99999-9999" 
+                                       required aria-describedby="phone-error">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-4 top-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div id="phone-error" class="text-red-500 text-sm mt-1 hidden" role="alert"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tamanho da Empresa -->
+                    <div>
+                        <label for="company-size" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Porte da Empresa
+                        </label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                            <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="radio" name="company-size" value="1-10" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">1-10</span>
+                            </label>
+                            <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="radio" name="company-size" value="11-50" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">11-50</span>
+                            </label>
+                            <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="radio" name="company-size" value="51-200" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">51-200</span>
+                            </label>
+                            <label class="flex items-center space-x-2 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="radio" name="company-size" value="200+" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">200+</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Serviços de Interesse -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">
+                            Serviços de Interesse (Opcional)
+                        </label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="checkbox" name="services[]" value="backup-servidores" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                    </svg>
+                                    <span class="text-sm text-gray-700">Backup de Servidores</span>
+                                </div>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="checkbox" name="services[]" value="backup-sistema" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                    </svg>
+                                    <span class="text-sm text-gray-700">Backup de Sistema</span>
+                                </div>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="checkbox" name="services[]" value="backup-vm" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                    </svg>
+                                    <span class="text-sm text-gray-700">Backup de VM</span>
+                                </div>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-xl hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                <input type="checkbox" name="services[]" value="backup-geral" class="text-blue-600 focus:ring-blue-500 rounded">
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                                    </svg>
+                                    <span class="text-sm text-gray-700">Backup Geral</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Descreva sua necessidade (Opcional)
+                        </label>
+                        <div class="relative">
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-3 bg-white border border-gray-300 text-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 resize-none" 
+                                      placeholder="Conte-nos mais sobre sua infraestrutura atual, problemas enfrentados ou objetivos específicos..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Consentimento -->
+                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="checkbox" id="privacy-consent" 
+                                   class="mt-1 text-blue-600 focus:ring-blue-500 focus:ring-2 rounded" 
+                                   required>
+                            <span class="text-sm text-gray-600 leading-relaxed">
+                                Concordo em receber contato comercial via WhatsApp, e-mail ou telefone, e com o tratamento dos meus dados conforme a 
+                                <a href="#privacy-policy" class="text-blue-600 hover:text-blue-700 font-medium underline">Política de Privacidade</a>. 
+                                <span class="text-red-500">*</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Botão de Envio -->
+                    <div class="pt-4">
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-300 flex items-center justify-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>Solicitar Diagnóstico via WhatsApp</span>
+                        </button>
+                        
+                        <div class="flex items-center justify-center mt-4 space-x-2 text-sm text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Resposta em até 2 horas úteis • 100% gratuito</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Navbar Scroll Effect ---
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'bg-opacity-95', 'backdrop-blur-sm', 'shadow-lg', 'nav-scrolled');
+            } else {
+                navbar.classList.remove('bg-white', 'bg-opacity-95', 'backdrop-blur-sm', 'shadow-lg', 'nav-scrolled');
+            }
+        });
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Close Mobile Menu on Link Click ---
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- Ano Atual no Footer ---
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // --- Animação Fade-in ao Rolar ---
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${index * 100}ms`;
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- Efeito Parallax para Mobile ---
+        const heroSection = document.querySelector('.hero-section');
+        const isMobile = window.innerWidth < 768;
+        
+        if (isMobile && heroSection) {
+            let ticking = false;
+            
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const heroHeight = heroSection.offsetHeight;
+                const speed = 0.3; // Velocidade do parallax (0.3 = 30% da velocidade do scroll)
+                
+                // Só aplica o efeito enquanto a hero section estiver visível na tela
+                if (scrolled < heroHeight) {
+                    const yPos = scrolled * speed;
+                    const heroBackground = heroSection.querySelector('::before') || heroSection;
+                    
+                    // Aplica transform no pseudo-elemento via CSS custom property
+                    heroSection.style.setProperty('--parallax-y', `${yPos}px`);
+                }
+                ticking = false;
+            }
+            
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }
+            
+            // Event listener com passive: true para melhor performance
+            window.addEventListener('scroll', requestTick, { passive: true });
+            
+            // Cleanup no resize se mudou para desktop
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) {
+                    heroSection.style.removeProperty('--parallax-y');
+                    window.removeEventListener('scroll', requestTick);
+                }
+            }, { passive: true });
+        }
+
+        // --- Botões Flutuantes ---
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        const floatingCtaBtn = document.getElementById('floatingCtaBtn');
+        
+        // Aparece após 35% do viewport scrollado (não altura total)
+        let scrollThresholdCta = window.innerHeight * 0.35;
+
+        window.addEventListener('scroll', () => {
+            // Botão "Fale com um especialista" - após 35% do viewport
+            if (window.scrollY > scrollThresholdCta) {
+                floatingCtaBtn.classList.remove('hidden');
+            } else {
+                floatingCtaBtn.classList.add('hidden');
+            }
+            // Botão "Scroll to Top" - sempre presente após scroll
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.remove('hidden');
+            } else {
+                scrollToTopBtn.classList.add('hidden');
+            }
+        });
+
+        // --- Modal de Contato Corporativo com Validação Avançada ---
+        const modal = document.getElementById('contactModal');
+        const openModalBtn = document.getElementById('floatingCtaBtn');
+        const heroCtaBtn = document.getElementById('heroCtaBtn');
+        const planosCtaBtn = document.getElementById('planosCtaBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const contactForm = document.getElementById('contactForm');
+        
+        let previousActiveElement;
+
+
+
+        const openModal = (source) => {
+            previousActiveElement = document.activeElement;
+            modal.style.display = 'flex';
+            modal.classList.add('show');
+            closeModalBtn.focus();
+            document.body.style.overflow = 'hidden';
+            
+            // Animação de entrada
+            setTimeout(() => {
+                const modalContent = modal.querySelector('.modal-content');
+                if (modalContent) {
+                    modalContent.style.transform = 'scale(1)';
+                    modalContent.style.opacity = '1';
+                }
+            }, 10);
+            
+            // GA4 Event: Modal Opened
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'lead_open_modal', {
+                    'source': source,
+                    'event_category': 'Lead Generation',
+                    'event_label': 'Modal Opened'
+                });
+            }
+            
+            // Meta Pixel Event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    'source': source
+                });
+            }
+        };
+
+        const closeModal = () => {
+            const modalContent = modal.querySelector('.modal-content');
+            if (modalContent) {
+                modalContent.style.transform = 'scale(0.95)';
+                modalContent.style.opacity = '0';
+            }
+            
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+                if (previousActiveElement) {
+                    previousActiveElement.focus();
+                }
+            }, 200);
+        };
+
+        // --- Máscaras de Input ---
+        
+        // Máscara de Telefone
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length <= 11) {
+                if (value.length <= 2) {
+                    value = value ? `(${value}` : '';
+                } else if (value.length <= 7) {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+                } else {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+                }
+            }
+            
+            e.target.value = value;
+        });
+
+        // Máscara de CNPJ
+        const cnpjInput = document.getElementById('cnpj');
+        cnpjInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length <= 14) {
+                value = value.replace(/(\d{2})(\d)/, '$1.$2');
+                value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                value = value.replace(/(\d{3})(\d)/, '$1/$2');
+                value = value.replace(/(\d{4})(\d{1,2})$/, '$1-$2');
+            }
+            
+            e.target.value = value;
+        });
+
+        // --- Validação de Campos ---
+        const validateField = (fieldId, rules = {}) => {
+            const field = document.getElementById(fieldId);
+            const errorDiv = document.getElementById(`${fieldId}-error`);
+            const value = field.value.trim();
+            
+            let isValid = true;
+            let errorMessage = '';
+            
+            if (rules.required && !value) {
+                isValid = false;
+                errorMessage = 'Este campo é obrigatório.';
+            } else if (rules.email && value && !isValidEmail(value)) {
+                isValid = false;
+                errorMessage = 'Por favor, insira um e-mail válido.';
+            } else if (rules.phone && value && !isValidPhone(value)) {
+                isValid = false;
+                errorMessage = 'Por favor, insira um telefone válido com DDD.';
+            } else if (rules.cnpj && value && !isValidCNPJ(value)) {
+                isValid = false;
+                errorMessage = 'CNPJ inválido. Formato: 00.000.000/0001-00';
+            }
+            
+            // Visual feedback
+            if (isValid) {
+                field.classList.remove('border-red-500', 'bg-red-50');
+                field.classList.add('border-green-500');
+                if (errorDiv) {
+                    errorDiv.classList.add('hidden');
+                    errorDiv.textContent = '';
+                }
+            } else {
+                field.classList.remove('border-green-500');
+                field.classList.add('border-red-500', 'bg-red-50');
+                if (errorDiv) {
+                    errorDiv.classList.remove('hidden');
+                    errorDiv.textContent = errorMessage;
+                }
+            }
+            
+            return isValid;
+        };
+
+        // Funções de validação
+        const isValidEmail = (email) => {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        };
+
+        const isValidPhone = (phone) => {
+            const phoneNumbers = phone.replace(/\D/g, '');
+            return phoneNumbers.length >= 10 && phoneNumbers.length <= 11;
+        };
+
+        const isValidCNPJ = (cnpj) => {
+            const numbers = cnpj.replace(/\D/g, '');
+            if (numbers.length !== 14) return false;
+            
+            // Validação simplificada do CNPJ
+            if (/^(\d)\1+$/.test(numbers)) return false; // Números repetidos
+            
+            let sum = 0;
+            let pos = 5;
+            for (let i = 0; i < 12; i++) {
+                sum += parseInt(numbers.charAt(i)) * pos--;
+                if (pos < 2) pos = 9;
+            }
+            let result = sum % 11 < 2 ? 0 : 11 - sum % 11;
+            if (result != parseInt(numbers.charAt(12))) return false;
+            
+            sum = 0;
+            pos = 6;
+            for (let i = 0; i < 13; i++) {
+                sum += parseInt(numbers.charAt(i)) * pos--;
+                if (pos < 2) pos = 9;
+            }
+            result = sum % 11 < 2 ? 0 : 11 - sum % 11;
+            return result == parseInt(numbers.charAt(13));
+        };
+
+        // Validação em tempo real
+        document.getElementById('name').addEventListener('blur', () => validateField('name', { required: true }));
+        document.getElementById('company').addEventListener('blur', () => validateField('company', { required: true }));
+        document.getElementById('email').addEventListener('blur', () => validateField('email', { required: true, email: true }));
+        document.getElementById('phone').addEventListener('blur', () => validateField('phone', { required: true, phone: true }));
+        document.getElementById('cnpj').addEventListener('blur', () => validateField('cnpj', { cnpj: true }));
+
+        // Trap focus within modal
+        const trapFocus = (e) => {
+            if (modal.style.display === 'none') return;
+            
+            const focusableElements = modal.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+
+            if (e.key === 'Tab') {
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        };
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                closeModal();
+            }
+            trapFocus(e);
+        });
+
+        openModalBtn.addEventListener('click', () => openModal('floating_button'));
+        heroCtaBtn.addEventListener('click', () => openModal('hero_section'));
+        planosCtaBtn.addEventListener('click', () => openModal('planos_section'));
+        closeModalBtn.addEventListener('click', closeModal);
+        
+        // Fechar ao clicar fora
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // --- Envio do formulário com validação completa ---
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            // Validar todos os campos obrigatórios
+            const isNameValid = validateField('name', { required: true });
+            const isCompanyValid = validateField('company', { required: true });
+            const isEmailValid = validateField('email', { required: true, email: true });
+            const isPhoneValid = validateField('phone', { required: true, phone: true });
+            const isCNPJValid = validateField('cnpj', { cnpj: true });
+            
+            const privacyConsent = document.getElementById('privacy-consent').checked;
+            
+            if (!privacyConsent) {
+                alert('Por favor, aceite os termos de privacidade para continuar.');
+                document.getElementById('privacy-consent').focus();
+                return;
+            }
+            
+            if (!isNameValid || !isCompanyValid || !isEmailValid || !isPhoneValid || !isCNPJValid) {
+                alert('Por favor, corrija os erros nos campos destacados.');
+                return;
+            }
+
+            // Coletar dados do formulário
+            const name = document.getElementById('name').value.trim();
+            const company = document.getElementById('company').value.trim();
+            const position = document.getElementById('position').value;
+            const cnpj = document.getElementById('cnpj').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const companySize = document.querySelector('input[name="company-size"]:checked')?.value || '';
+            const services = Array.from(document.querySelectorAll('input[name="services[]"]:checked')).map(cb => cb.value);
+            const message = document.getElementById('message').value.trim();
+            
+            // Montar mensagem para WhatsApp
+            let text = `🔐 *Diagnóstico de Backup Corporativo* 🔐\n\n`;
+            text += `👤 *Nome:* ${name}\n`;
+            text += `🏢 *Empresa:* ${company}\n`;
+            if (position) text += `💼 *Cargo:* ${position}\n`;
+            if (cnpj) text += `📄 *CNPJ:* ${cnpj}\n`;
+            text += `📧 *E-mail:* ${email}\n`;
+            text += `📱 *Telefone:* ${phone}\n`;
+            if (companySize) text += `👥 *Porte da Empresa:* ${companySize} funcionários\n`;
+            
+            if (services.length > 0) {
+                text += `🎯 *Serviços de Interesse:*\n`;
+                services.forEach(service => {
+                    const serviceNames = {
+                        'backup-servidores': '• Backup de Servidores',
+                        'backup-sistema': '• Backup de Sistema',
+                        'backup-vm': '• Backup de VM',
+                        'backup-geral': '• Backup Geral'
+                    };
+                    text += `${serviceNames[service] || '• ' + service}\n`;
+                });
+            }
+            
+            if (message) {
+                text += `💬 *Mensagem:* ${message}\n`;
+            }
+            
+            text += `\n✅ *Solicito o diagnóstico técnico gratuito para minha empresa.*`;
+            text += `\n\n_Mensagem enviada através do site brsolucoes.inf.br_`;
+            
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/5547999817997?text=${encodedText}&utm_source=landing&utm_medium=whatsapp&utm_campaign=backup-corporativo`;
+
+            // GA4 Event: Form Submitted
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'lead_submit_whatsapp', {
+                    'event_category': 'Lead Generation',
+                    'event_label': 'WhatsApp Form Submitted Corporate',
+                    'value': 1,
+                    'company_size': companySize,
+                    'services_count': services.length
+                });
+            }
+            
+            // Meta Pixel Event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'SubmitApplication', {
+                    'content_name': 'Backup Corporativo Form Enhanced',
+                    'value': 1,
+                    'currency': 'BRL'
+                });
+            }
+
+            window.open(whatsappUrl, '_blank');
+            
+            // Feedback visual de sucesso
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                <span>Redirecionando...</span>
+            `;
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                closeModal();
+                contactForm.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // --- Google Reviews Click Tracking ---
+        const reviewsButton = document.querySelector('a[href*="google.com/search"]');
+        if (reviewsButton) {
+            reviewsButton.addEventListener('click', () => {
+                gtag('event', 'click', {
+                    'event_category': 'External Link',
+                    'event_label': 'Google Reviews'
+                });
+            });
+        }
+
+        // --- Privacy Policy Modal ---
+        const privacyLinks = document.querySelectorAll('a[href="#privacy-policy"]');
+        const privacyModal = document.getElementById('privacy-policy');
+        
+        privacyLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                privacyModal.classList.remove('hidden');
+            });
+        });
+
+        // --- Modais dos Planos ---
+        const planModalButtons = document.querySelectorAll('.saiba-mais-btn');
+        const planModals = {
+            'essencial': document.getElementById('planModal-essencial'),
+            'business': document.getElementById('planModal-business'),
+            'enterprise': document.getElementById('planModal-enterprise')
+        };
+        const closePlanModalButtons = document.querySelectorAll('.close-plan-modal');
+        const planModalCTAs = document.querySelectorAll('.plan-modal-cta');
+
+        let currentPlanModal = null;
+        let previousActiveElementPlan = null;
+
+        // Função para abrir modal do plano
+        const openPlanModal = (planType) => {
+            const modal = planModals[planType];
+            if (!modal) return;
+
+            previousActiveElementPlan = document.activeElement;
+            currentPlanModal = modal;
+            
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            // Foco no botão de fechar
+            const closeBtn = modal.querySelector('.close-plan-modal');
+            if (closeBtn) closeBtn.focus();
+            
+            // Animação de entrada
+            setTimeout(() => {
+                const modalContent = modal.querySelector('.plan-modal-content');
+                if (modalContent) {
+                    modalContent.style.transform = 'scale(1)';
+                    modalContent.style.opacity = '1';
+                }
+            }, 10);
+            
+            // Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'plan_modal_open', {
+                    'plan_type': planType,
+                    'event_category': 'Plan Interaction',
+                    'event_label': `Plan ${planType} Modal Opened`
+                });
+            }
+            
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'ViewContent', {
+                    'content_type': 'plan',
+                    'content_name': `Plan ${planType}`
+                });
+            }
+        };
+
+        // Função para fechar modal do plano
+        const closePlanModal = () => {
+            if (!currentPlanModal) return;
+            
+            const modalContent = currentPlanModal.querySelector('.plan-modal-content');
+            if (modalContent) {
+                modalContent.style.transform = 'scale(0.95)';
+                modalContent.style.opacity = '0';
+            }
+            
+            setTimeout(() => {
+                currentPlanModal.style.display = 'none';
+                document.body.style.overflow = '';
+                
+                if (previousActiveElementPlan) {
+                    previousActiveElementPlan.focus();
+                }
+                
+                currentPlanModal = null;
+            }, 200);
+        };
+
+        // Event listeners para botões "Saiba mais"
+        planModalButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const planType = button.getAttribute('data-plan');
+                if (planType) {
+                    openPlanModal(planType);
+                }
+            });
+        });
+
+        // Event listeners para botões de fechar
+        closePlanModalButtons.forEach(button => {
+            button.addEventListener('click', closePlanModal);
+        });
+
+        // Event listeners para CTAs dos modais (abrir modal de contato)
+        planModalCTAs.forEach(button => {
+            button.addEventListener('click', () => {
+                // Fechar modal do plano
+                closePlanModal();
+                
+                // Abrir modal de contato após um pequeno delay
+                setTimeout(() => {
+                    openModal('plan_modal_cta');
+                }, 300);
+            });
+        });
+
+        // Fechar modal ao clicar fora
+        Object.values(planModals).forEach(modal => {
+            if (modal) {
+                modal.addEventListener('click', (event) => {
+                    if (event.target === modal) {
+                        closePlanModal();
+                    }
+                });
+            }
+        });
+
+        // Trap focus nos modais dos planos
+        const trapFocusPlan = (e) => {
+            if (!currentPlanModal || currentPlanModal.style.display === 'none') return;
+            
+            const focusableElements = currentPlanModal.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+
+            if (e.key === 'Tab') {
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        e.preventDefault();
+                    }
+                } else {
+                    if (document.activeElement === lastElement) {
+                        firstElement.focus();
+                        e.preventDefault();
+                    }
+                }
+            }
+        };
+
+        // Event listener para teclas (Escape e Tab)
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && currentPlanModal && currentPlanModal.style.display === 'flex') {
+                closePlanModal();
+            }
+            trapFocusPlan(e);
+        });
+    });
+
+    // --- FAQ Accordion Function ---
+    function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('svg');
+        
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    }
+    </script>
+
+    <!-- Função global para abrir modal de contato -->
+    <script>
+    function openContactModal() {
+        console.log('openContactModal chamada'); // Debug
+        
+        // Buscar o modal e abrir
+        const modal = document.getElementById('contactModal');
+        if (modal) {
+            console.log('Modal encontrado, abrindo...'); // Debug
+            modal.style.display = 'flex';
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+            
+            // Focar no botão de fechar para acessibilidade
+            const closeBtn = document.getElementById('closeModalBtn');
+            if (closeBtn) {
+                closeBtn.focus();
+            }
+            
+            // Animação de entrada
+            setTimeout(() => {
+                const modalContent = modal.querySelector('.modal-content');
+                if (modalContent) {
+                    modalContent.style.transform = 'scale(1)';
+                    modalContent.style.opacity = '1';
+                }
+            }, 10);
+        } else {
+            console.error('Modal contactModal não encontrado!');
+        }
+    }
+    </script>
+</body>
+</html>

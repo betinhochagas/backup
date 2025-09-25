@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="gridPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#gridPattern)"/>
+  
+  <!-- Logo Circle -->
+  <circle cx="600" cy="200" r="60" fill="white" opacity="0.95"/>
+  
+  <!-- Shield Icon -->
+  <g transform="translate(600, 200)">
+    <path d="M-30,-40 L-30,-20 C-30,-5 -15,10 0,15 C15,10 30,-5 30,-20 L30,-40 Z" fill="#1e40af"/>
+    <path d="M-15,-5 L-5,5 L15,-15" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="600" y="320" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="56" font-weight="bold">
+    <tspan x="600" dy="0">Backup Corporativo</tspan>
+    <tspan x="600" dy="65">RTO em 15 min</tspan>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="420" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-size="28" font-weight="normal">
+    Arquitetura 3-2-1-1-0 • Monitoramento 24/7 • LGPD Compliance
+  </text>
+  
+  <!-- Features -->
+  <g transform="translate(200, 480)">
+    <!-- Feature 1 -->
+    <rect x="0" y="0" width="240" height="50" rx="25" fill="rgba(255,255,255,0.15)"/>
+    <circle cx="25" cy="25" r="12" fill="#10b981"/>
+    <text x="25" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">✓</text>
+    <text x="50" y="30" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="500">Criptografia AES-256</text>
+    
+    <!-- Feature 2 -->
+    <rect x="280" y="0" width="160" height="50" rx="25" fill="rgba(255,255,255,0.15)"/>
+    <circle cx="305" cy="25" r="12" fill="#10b981"/>
+    <text x="305" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">✓</text>
+    <text x="330" y="30" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="500">SLA 99,9%</text>
+    
+    <!-- Feature 3 -->
+    <rect x="480" y="0" width="200" height="50" rx="25" fill="rgba(255,255,255,0.15)"/>
+    <circle cx="505" cy="25" r="12" fill="#10b981"/>
+    <text x="505" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">✓</text>
+    <text x="530" y="30" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="500">Backup Imutável</text>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="1120" y="590" text-anchor="end" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    B&amp;R Soluções em TI
+  </text>
+</svg>
